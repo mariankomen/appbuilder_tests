@@ -1,0 +1,202 @@
+[
+  {
+    "question": "Universal Containers wants to create a report to show job applications with or without resumes. What considerations should the app builder be aware of when creating the custom report type? ",
+    "answers": {
+      "first_answer": "An app builder is unable to create custom report types for objects they do NOT have permissions for. ",
+      "second_answer": "Once the report type has been deployed it is unable to be deleted. ",
+      "third_answer": "A primary object selection is locked once the custom report type has been saved. ",
+      "fourth_answer": "When a custom or external object is deleted the report type and reports remain but "
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "Universal Containers is piloting new features in an existing sandbox and wants to prevent \noutbound email sends during testing. What should the app builder do to meet the requirement? \n",
+    "answers": {
+      "first_answer": "Email configured for SMTP authentication ",
+      "second_answer": "Email deliverability set to no access",
+      "third_answer": "Email relay to the configured host enabled",
+      "fourth_answer": "Email deliverability set to system email only. "
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "1.\tUniversal Container (UC) has a time-sensitive need for a custom component to be built in 4 weeks.UC developers require additional enablement to complete the work and are backlogged by several months. What option should an app builder suggest to meet this requirement? \n",
+    "answers": {
+      "first_answer": "Build a screen flow page.",
+      "second_answer": "Use an AppExchange solution.",
+      "third_answer": "Build a Lightning record page.",
+      "fourth_answer": "Use a Bolt solution."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "2.\tAfter a deal is closed, Cloud Kicks (CK) wants to assign a user as a customer service manager (CSM) in addition to the account owner and would like a new field to easily track and report which CSM is assigned to the Account. What solution should an app builder use for this request? \n",
+    "answers": {
+      "first_answer": "Multi-select picklist field.",
+      "second_answer": "Text field",
+      "third_answer": "Picklist field",
+      "fourth_answer": "Lookup field"
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "3.\tThe marketing team at Universal Containers has a list of 400 leads it wants to upload to Salesforce. The team needs to avoid creating duplicate records. Which two actions should be taken to meet this requirement? Choose 2 answers. \n",
+    "answers": {
+      "first_answer": "Utilize a Lead Matching Rule and corresponding Duplicate Rule to block newly created duplicate leads",
+      "second_answer": "Upload the lead list using the Import Wizard and select a Matching Type to prevent duplicate lead creation.",
+      "third_answer": "Enable Duplicate Matching in the Data Management section in Setup and activate the Leadto-Lead scenario.",
+      "fourth_answer": "Use Data Loader’s update function to import leads and match to existing records based on email address."
+    },
+    "true_answer": "1,2"
+  },
+  {
+    "question": "3.\tAn app builder notices several Accounts converted from Leads are missing information they expected to be caught via Account validation rules. What could be the source of this issue? \n",
+    "answers": {
+      "first_answer": "Lead validation rules fail to validate on records when they are being converted.",
+      "second_answer": "The lead settings are allowing users to intentionally bypass validation rules.",
+      "third_answer": "The lead settings are unchecked to require validation for converted leads.",
+      "fourth_answer": " Account validation rules fail to validate on records converted from a lead."
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "3.\tWhat are the limitations of Schema Builder when creating a custom object? \n",
+    "answers": {
+      "first_answer": "Relationships can be made to any custom objects, but any relationships to standard objects should be built in Lightning Object Manager.",
+      "second_answer": "“Save” should be clicked each time a new object, field, or relationship is created.",
+      "third_answer": "Custom fields can be added to any custom objects, excluding formula field types",
+      "fourth_answer": "Fields and relationships can be created, but they will be unable to add the fields to the page layout from the canvas."
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "3.\tAn app builder needs to deploy a new account detail page layout from sandbox to production. Which three components should an app builder include in the Change Set to ensure it deploys successfully and visually as expected? Choose 3 answers \n",
+    "answers": {
+      "first_answer": "Detail page layout",
+      "second_answer": "Custom fields",
+      "third_answer": "Lightning App Builder",
+      "fourth_answer": "System administrator profile"
+    },
+    "true_answer": "1,2,4"
+  },
+  {
+    "question": "3.\tDreamHouse Realty is rethinking its sandbox utilization strategy after acquiring Cloud Kicks. The Salesforce COE already utilizes a partial and a full sandbox, which it refreshes on their own regular schedules. Teams are expanding and have to begin each of their small projects in a sandbox before committing to the larger pool for collaborative testing while still keeping costs down. What type of sandbox should each team member use? \n",
+    "answers": {
+      "first_answer": "Developer pro sandbox",
+      "second_answer": "Partial sandbox",
+      "third_answer": "Developer sandbox",
+      "fourth_answer": "Full sandbox"
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "3.\tAn app builder installed a custom Lightning component from AppExchange and has deployed MyDomain. What should be done next in order to configure the component for use in a record page? \n",
+    "answers": {
+      "first_answer": "Edit a record page using the page Layout editor > Drag the Visualforce component onto the page.",
+      "second_answer": "Edit a record page using Lightning App Builder > Drag the component onto the page.",
+      "third_answer": "Edit a record page using the Page Layout editor > Drag the component onto the page.",
+      "fourth_answer": "Edit a record page using App Manager > Drag the component onto the page."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "3.\tA service Coordinator (SC) for Ursa Major Solar (UMS) does a final review of work orders owned by a technician for a specific region before the records are submitted for an invoice. Before closing out the work order, the SC needs to modify data or remove attachments that were added by mistake. The SC also needs access to any other related records owned by the technician. What solution would provide the required access, given a private data model? \n",
+    "answers": {
+      "first_answer": "Create a workflow rule that updates records owned by technicians in that region with the SC.",
+      "second_answer": "Put the SC in the Role Hierarchy above the technicians whose work orders they review.",
+      "third_answer": "Change work order access on the SC’s profile to ‘Modify All’.",
+      "fourth_answer": "Give the SC a permission set with the Modify All Data system permission."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "3.\tUniversal Containers has the Account object’s Org Wide Default set to Private. The Marketing team owns Accounts; however, they also need to be able to see the Sales team’s Accounts. Both the Sales and Marketing teams are in completely different branches of the role hierarchy. What feature should be used to enable Marketing to see Sales-owned accounts? \n",
+    "answers": {
+      "first_answer": "Public Group",
+      "second_answer": "Sharing Rules",
+      "third_answer": "Workflow",
+      "fourth_answer": "Flow"
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "3.\tUniversal Containers wants to dynamically display a component on a Lightning record page for an account based on criteria about the related contact. What solution should an app builder use to fulfill this requirement? \n",
+    "answers": {
+      "first_answer": "Set the component visibility to display based on an advanced filter type, using the contact field(s) to define the dynamic criteria.",
+      "second_answer": "Add a related record component to the page layout.",
+      "third_answer": "Set the filter type on the component visibility to display based on user permissions, using custom permission to define the dynamic criteria.",
+      "fourth_answer": "Hide the component behind a tab on the page layout."
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "3.\tUrsa Major Solar’s sales team has been struggling to enter data on mobile since rollout; the team dislikes scrolling through all of the fields to input only the necessary data. How could the app builder solve this with minimal impact to desktop users? \n",
+    "answers": {
+      "first_answer": "Filter components by device using Form Factor",
+      "second_answer": "Update the training documentation with better screenshots.",
+      "third_answer": "Deselect the phone radio button on the Lightning record page assignment",
+      "fourth_answer": "Reorder the fields to make sense for the reps when in the field."
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "3.\tUrsa Major Solar’s sales team has been struggling to enter data on mobile since rollout; the team dislikes scrolling through all of the fields to input only the necessary data. How could the app builder solve this with minimal impact to desktop users? \n",
+    "answers": {
+      "first_answer": "Filter components by device using Form Factor",
+      "second_answer": "Update the training documentation with better screenshots.",
+      "third_answer": "Deselect the phone radio button on the Lightning record page assignment",
+      "fourth_answer": "Reorder the fields to make sense for the reps when in the field."
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "3.\tUniversal Containers uses the Asset object to track products that are installed at customer locations. A new object, Asset_Inventory__c, has been created to capture details about the asset. Which approach should the app builder take to show Asset_Inventory__c as a related list on Asset? \n",
+    "answers": {
+      "first_answer": "Create a master-detail relationship on Asset to Asset_Inventory__c Add theAsset_Inventory__c related list to the Asset page layout.",
+      "second_answer": "Create a lookup relationship on Asset_Inventory__c to Asset. Add the Asset_Inventory__c related list to the Asset page layout",
+      "third_answer": "Create a junction object to relate Asset_Inventory__c and Asset. Add the Asset_Inventory__c related list to the Asset page layout.",
+      "fourth_answer": "Create a roll-up on Asset. Add the Asset_Inventory__c related list to the Asset page layout."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "3.\tAn app builder wants to update a field on the parent record when a child record connected via lookup is deleted. What automation should the app builder use? \n",
+    "answers": {
+      "first_answer": "Apex code",
+      "second_answer": "Process Builder",
+      "third_answer": "Workflow rule",
+      "fourth_answer": "Screen flow"
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "3.\tAn app builder needs to create new automation on an object. What best practice should the app builder follow when building out automation? \n",
+    "answers": {
+      "first_answer": "One Flow per object.",
+      "second_answer": "One Workflow rule per object.",
+      "third_answer": "One record change process per object.",
+      "fourth_answer": "One invocable process per object."
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "3.\tDreamHouse Realty (DR) has a policy that requires the phone number on Contact to be deleted when the DoNotCall checkbox is checked. What automation tool should the app builder recommend? \n",
+    "answers": {
+      "first_answer": "Approval process",
+      "second_answer": "Quick action",
+      "third_answer": "Validation rule",
+      "fourth_answer": "Workflow rule"
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "3.\tUniversal Containers is migrating its sales operations from a legacy system that was used in Europe. Opportunities need to be imported with the proper country currency. Which two steps should an app builder configure to meet these requirements? Choose 2 answers. \n",
+    "answers": {
+      "first_answer": "Use Import Wizard to import the records",
+      "second_answer": "Include the Currency ISO code Column in the import file.",
+      "third_answer": "Use Data Loader to import the records.",
+      "fourth_answer": "Include the Currency ISO code in all currency fields I the import file."
+    },
+    "true_answer": "2,4"
+  }
+]
