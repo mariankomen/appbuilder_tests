@@ -7,7 +7,7 @@
       "third_answer": "A primary object selection is locked once the custom report type has been saved. ",
       "fourth_answer": "When a custom or external object is deleted the report type and reports remain but "
     },
-    "true_answer": "2"
+    "true_answer": "3"
   },
   {
     "question": "Universal Containers is piloting new features in an existing sandbox and wants to prevent \noutbound email sends during testing. What should the app builder do to meet the requirement? \n",
