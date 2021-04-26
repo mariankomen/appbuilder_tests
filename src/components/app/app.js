@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import style from '../../assets/styles/scss/app.module.scss'
+import style from '../../assets/styles/scss/app.module.css'
 import Header from "../header/header";
 import QuestionItem from "../question-item/question-item";
 

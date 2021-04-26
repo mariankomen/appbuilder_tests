@@ -7,29 +7,28 @@
   padding: 15px;
   margin: 0 auto;
   margin-top: 75px;
+}
 
-  &__question{
-    &__inputs{
-    float: bottom;
-      padding-top: 15px;
-      &__item {
-        display: flex;
-        padding-top: 10px;
-        margin-left: 10px;
+.general__question{
 
-        :first-child {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-
-  &__button button{
-    width: 100px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    float: right;
-  }
+}
+.general__question__inputs{
+  float: bottom;
+  padding-top: 15px;
+}
+.general__question__inputs__item{
+  display: flex;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+.general__question__inputs__item:first-child{
+  margin-right: 10px;
+}
+.general__button button{
+  width: 100px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  float: right;
 }

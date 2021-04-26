@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import style from '../../assets/styles/scss/questionitem.module.scss'
+import style from '../../assets/styles/scss/questionitem.module.css'
 
 const QuestionItem = (props) => {
 
