@@ -1,9 +1,9 @@
 .general {
   width: 1200px;
-  height: 250px;
+  height: 300px;
   max-height: 10000px;
   border: 3px solid #666;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   padding: 15px;
   margin: 0 auto;
   margin-top: 75px;
@@ -16,14 +16,30 @@
   float: bottom;
   padding-top: 15px;
 }
+
+.general__question__inputs span p{
+  margin-left: 25px;
+}
+
 .general__question__inputs__item{
   display: flex;
   padding-top: 10px;
   margin-left: 10px;
+  font-family: 'Raanana';
 }
+.general__question__inputs__item p{
+  font-family: 'Raanana';
+}
+.general__question__inputs__item input{
+  width: 20px;
+  height: 20px;
+}
+
+
 .general__question__inputs__item:first-child{
   margin-right: 10px;
 }
+
 .general__button button{
   width: 100px;
   height: 35px;

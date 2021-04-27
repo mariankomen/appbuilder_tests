@@ -8,6 +8,9 @@
 }
 
 .answers {
-  font-size: 1.2rem;
+  padding-top: 50px;
+  padding-left: 75px;
+  font-size: 1.4rem;
   position: fixed;
+  font-family: 'Tamil MN';
 }
