@@ -19,9 +19,14 @@ const QuestionItem = (props) => {
 
     const button_func = (e) => {
         e.preventDefault()
-        if(props.true_answer === arr_1.join(',')){
+        if (props.true_answer === arr_1.join(',')) {
             props.setANSWER(props.ANSWER + 1)
-        } else{
+            alert('TRUE')
+            setFirst(false)
+            setSecond(false)
+            setThird(false)
+            setFourth(false)
+        } else {
             alert(`
                                 Answer is INCORRECT!!!
             
@@ -42,9 +47,6 @@ const QuestionItem = (props) => {
         }
     }, arr)
 
-
-
-
     return (
         <div className={style.general}>
             <div className={style.general__question}>
@@ -55,27 +57,31 @@ const QuestionItem = (props) => {
             <div className={style.general__question__inputs}>
                 <span className={style.general__question__inputs__item}
                       style={styles}
+                      onClick={() => setFirst(!first)}
+
                 > A. <input type='radio'
-                         checked={first}
-                         onClick={() => setFirst(!first)}
+                            checked={first}
                 /><p>{props.first_answer}</p></span>
                 <span className={style.general__question__inputs__item}
                       style={styles}
+                      onClick={() => setSecond(!second)}
+
                 > B. <input type='radio'
-                                                                                checked={second}
-                                                                                onClick={() => setSecond(!second)}
+                            checked={second}
                 /><p>{props.second_answer}</p></span>
                 <span className={style.general__question__inputs__item}
                       style={styles}
+                      onClick={() => setThird(!third)}
+
                 > C. <input type='radio'
-                                                                                checked={third}
-                                                                                onClick={() => setThird(!third)}
+                            checked={third}
                 /><p>{props.third_answer}</p></span>
                 <span className={style.general__question__inputs__item}
                       style={styles}
+                      onClick={() => setFourth(!fourth)}
+
                 > D. <input type='radio'
-                                                                                checked={fourth}
-                                                                                onClick={() => setFourth(!fourth)}
+                            checked={fourth}
                 /><p>{props.fourth_answer}</p></span>
             </div>
             <div className={style.general__button}>

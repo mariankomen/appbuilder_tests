@@ -16,6 +16,9 @@
   float: bottom;
   padding-top: 15px;
 }
+.general__question__inputs:hover {
+  cursor: pointer;
+}
 
 .general__question__inputs span p{
   margin-left: 25px;
@@ -23,6 +26,7 @@
 
 .general__question__inputs__item{
   display: flex;
+  width: auto;
   padding-top: 10px;
   margin-left: 10px;
   font-family: 'Raanana';

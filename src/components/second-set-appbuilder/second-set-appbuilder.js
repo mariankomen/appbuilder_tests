@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import QuestionItem from "../question-item/question-item";
 import style from "../../assets/styles/scss/app.module.css";
-import {BrowserRouter} from "react-router-dom";
 
 const SecondSetAppbuilder = () => {
     const db = require('../../database.json')
+
     const [ANSWER, setANSWER] = useState(0)
 
     let items = db.map(item => <QuestionItem question={item.question}
@@ -16,9 +16,15 @@ const SecondSetAppbuilder = () => {
                                              setANSWER={setANSWER}
                                              ANSWER={ANSWER}
     />)
+    function top() {
+        document.getElementById( 'toppos' ).scrollIntoView({block: "start", behavior: "smooth"});
+    }
     return (
-        <div>
+        <div id={'toppos'}>
             <span className={style.answers}>True answers: {ANSWER}</span>
+            <span ><button className={style.topButton}
+                           onClick={() => top()}
+            >To top</button></span>
             {items}
         </div>
     );

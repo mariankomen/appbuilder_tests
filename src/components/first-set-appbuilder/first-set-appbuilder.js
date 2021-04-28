@@ -15,12 +15,21 @@ const FirstSetAppbuilder = () => {
                                              setANSWER={setANSWER}
                                              ANSWER={ANSWER}
     />)
+    function top() {
+        document.getElementById( 'toppos' ).scrollIntoView({block: "start", behavior: "smooth"});
+    }
     return (
-        <div>
+        <div id={'toppos'}>
             <span className={style.answers}>True answers: {ANSWER}</span>
+            <span ><button className={style.topButton}
+                           onClick={() => top()}
+            >To top</button></span>
             {items}
         </div>
     );
 };
+
+
+
 
 export default FirstSetAppbuilder;

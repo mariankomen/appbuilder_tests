@@ -10,7 +10,6 @@ import RandomSet from "../random-set/random-set";
 
 const App = () => {
 
-
     return (
         <div className={style.main}>
             <BrowserRouter>
