@@ -84,14 +84,14 @@ const QuestionItem = (props) => {
                             checked={fourth}
                 /><p>{props.fourth_answer}</p></span>
 
+                    <button
+                        onClick={button_func}
+                        className={style.btn}
+                    >Submit
+                    </button>
+
             </div>
-            <div className={style.general__button}>
-                <button
-                    onClick={button_func}
-                    className={style.btn}
-                >Submit
-                </button>
-            </div>
+
         </div>
     );
 };

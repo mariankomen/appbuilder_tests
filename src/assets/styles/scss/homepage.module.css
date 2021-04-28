@@ -1,0 +1,13 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.logo {
+    margin-top: 150px;
+}
+.main {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

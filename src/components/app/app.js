@@ -7,6 +7,7 @@ import {BrowserRouter, Route} from 'react-router-dom'
 import FirstSetAppbuilder from "../first-set-appbuilder/first-set-appbuilder";
 import SecondSetAppbuilder from "../second-set-appbuilder/second-set-appbuilder";
 import RandomSet from "../random-set/random-set";
+import Homepage from "../homepage/homepage";
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
             <BrowserRouter>
 
                 <Header/>
+                <Route path='/' exact render={() => <Homepage/>}/>
                 <Route path='/first' render={() => <FirstSetAppbuilder/>}/>
                 <Route path='/second' render={() => <SecondSetAppbuilder/>}/>
                 <Route path='/random' render={() => <RandomSet/>}/>

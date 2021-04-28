@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import {NavLink} from "react-router-dom";
 
+import style from '../../assets/styles/scss/header.module.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,17 +32,17 @@ export default function Header() {
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" className={classes.title}>
-                        PeekLogic
+                    <Typography variant="h6" className={classes.title} >
+                        <NavLink to='/' >PeekLogic</NavLink>
                     </Typography>
-                    <Typography variant="h5" className={classes.title}>
-                        <NavLink to='/first'>First Set</NavLink>
+                    <Typography variant="h5" className={classes.title} >
+                        <NavLink to='/first' activeClassName={style.active}>First Set</NavLink>
                     </Typography>
-                    <Typography variant="h5" className={classes.title}>
-                        <NavLink to='/second'>Second Set</NavLink>
+                    <Typography variant="h5" className={classes.title} >
+                        <NavLink to='/second' activeClassName={style.active}>Second Set</NavLink>
                     </Typography>
-                    <Typography variant="h5" className={classes.title}>
-                        <NavLink to='/random'>Random Question</NavLink>
+                    <Typography variant="h5" className={classes.title} >
+                        <NavLink to='/random' activeClassName={style.active}>Random Question</NavLink>
                     </Typography>
 
                     <Button color="inherit">Login</Button>
