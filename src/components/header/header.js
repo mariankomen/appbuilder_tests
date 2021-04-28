@@ -40,6 +40,9 @@ export default function Header() {
                     <Typography variant="h5" className={classes.title}>
                         <NavLink to='/second'>Second Set</NavLink>
                     </Typography>
+                    <Typography variant="h5" className={classes.title}>
+                        <NavLink to='/random'>Random Question</NavLink>
+                    </Typography>
 
                     <Button color="inherit">Login</Button>
                 </Toolbar>

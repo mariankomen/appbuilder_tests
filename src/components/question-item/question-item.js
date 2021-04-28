@@ -17,7 +17,8 @@ const QuestionItem = (props) => {
 
     // const button_func = () => props.true_answer === arr_1.join(',') ? props.setANSWER(props.ANSWER + 1) : alert('answer is incorrect')
 
-    const button_func = () => {
+    const button_func = (e) => {
+        e.preventDefault()
         if(props.true_answer === arr_1.join(',')){
             props.setANSWER(props.ANSWER + 1)
         } else{
