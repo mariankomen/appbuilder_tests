@@ -83,10 +83,12 @@ const QuestionItem = (props) => {
                 > D. <input type='radio'
                             checked={fourth}
                 /><p>{props.fourth_answer}</p></span>
+
             </div>
             <div className={style.general__button}>
                 <button
                     onClick={button_func}
+                    className={style.btn}
                 >Submit
                 </button>
             </div>

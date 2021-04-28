@@ -21,7 +21,7 @@ const SecondSetAppbuilder = () => {
     }
     return (
         <div id={'toppos'}>
-            <span className={style.answers}>True answers: {ANSWER}</span>
+            <span className={style.answers}>True answers: {ANSWER} of {db.length}</span>
             <span ><button className={style.topButton}
                            onClick={() => top()}
             >To top</button></span>
