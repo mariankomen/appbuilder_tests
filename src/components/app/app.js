@@ -8,6 +8,7 @@ import FirstSetAppbuilder from "../first-set-appbuilder/first-set-appbuilder";
 import SecondSetAppbuilder from "../second-set-appbuilder/second-set-appbuilder";
 import RandomSet from "../random-set/random-set";
 import Homepage from "../homepage/homepage";
+import ThirdSetAppbuilder from "../third-set-appbuilder/third-set-appbuilder";
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path='/' exact render={() => <Homepage/>}/>
                 <Route path='/first' render={() => <FirstSetAppbuilder/>}/>
                 <Route path='/second' render={() => <SecondSetAppbuilder/>}/>
+                <Route path='/third' render={() => <ThirdSetAppbuilder/>}/>
                 <Route path='/random' render={() => <RandomSet/>}/>
 
             </BrowserRouter>

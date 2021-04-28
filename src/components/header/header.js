@@ -42,6 +42,9 @@ export default function Header() {
                         <NavLink to='/second' activeClassName={style.active}>Second Set</NavLink>
                     </Typography>
                     <Typography variant="h5" className={classes.title} >
+                        <NavLink to='/third' activeClassName={style.active}>Third Set</NavLink>
+                    </Typography>
+                    <Typography variant="h5" className={classes.title} >
                         <NavLink to='/random' activeClassName={style.active}>Random Question</NavLink>
                     </Typography>
 
