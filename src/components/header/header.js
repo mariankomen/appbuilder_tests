@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import {NavLink} from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,6 +34,13 @@ export default function Header() {
                     <Typography variant="h6" className={classes.title}>
                         PeekLogic
                     </Typography>
+                    <Typography variant="h5" className={classes.title}>
+                        <NavLink to='/first'>First Set</NavLink>
+                    </Typography>
+                    <Typography variant="h5" className={classes.title}>
+                        <NavLink to='/second'>Second Set</NavLink>
+                    </Typography>
+
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>

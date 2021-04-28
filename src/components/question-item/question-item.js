@@ -54,25 +54,25 @@ const QuestionItem = (props) => {
             <div className={style.general__question__inputs}>
                 <span className={style.general__question__inputs__item}
                       style={styles}
-                > <input type='radio'
+                > A. <input type='radio'
                          checked={first}
                          onClick={() => setFirst(!first)}
                 /><p>{props.first_answer}</p></span>
                 <span className={style.general__question__inputs__item}
                       style={styles}
-                > <input type='radio'
+                > B. <input type='radio'
                                                                                 checked={second}
                                                                                 onClick={() => setSecond(!second)}
                 /><p>{props.second_answer}</p></span>
                 <span className={style.general__question__inputs__item}
                       style={styles}
-                > <input type='radio'
+                > C. <input type='radio'
                                                                                 checked={third}
                                                                                 onClick={() => setThird(!third)}
                 /><p>{props.third_answer}</p></span>
                 <span className={style.general__question__inputs__item}
                       style={styles}
-                > <input type='radio'
+                > D. <input type='radio'
                                                                                 checked={fourth}
                                                                                 onClick={() => setFourth(!fourth)}
                 /><p>{props.fourth_answer}</p></span>

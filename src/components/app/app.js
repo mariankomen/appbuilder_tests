@@ -3,32 +3,24 @@ import React, {useState} from 'react';
 import style from '../../assets/styles/scss/app.module.css'
 import Header from "../header/header";
 import QuestionItem from "../question-item/question-item";
-
-
+import {BrowserRouter, Route} from 'react-router-dom'
+import FirstSetAppbuilder from "../first-set-appbuilder/first-set-appbuilder";
+import SecondSetAppbuilder from "../second-set-appbuilder/second-set-appbuilder";
 
 const App = () => {
 
-    const [ANSWER, setANSWER] = useState(0)
 
 
-
-    const db = require('../../database.json')
-
-    let items = db.map(item => <QuestionItem question={item.question}
-                                             first_answer={item.answers.first_answer}
-                                             second_answer={item.answers.second_answer}
-                                             third_answer={item.answers.third_answer}
-                                             fourth_answer={item.answers.fourth_answer}
-                                             true_answer={item.true_answer}
-                                             setANSWER={setANSWER}
-                                             ANSWER={ANSWER}
-    />)
 
     return (
         <div className={style.main}>
+            <BrowserRouter>
+
             <Header/>
-            <span className={style.answers}>True answers: {ANSWER}</span>
-            {items}
+            <Route path='/first' render={() => <FirstSetAppbuilder/>}/>
+            <Route path='/second' render={() => <SecondSetAppbuilder/>}/>
+
+            </BrowserRouter>
         </div>
     );
 };

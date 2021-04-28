@@ -1,25 +1,5 @@
 [
   {
-    "question": "Universal Containers wants to create a report to show job applications with or without resumes. What considerations should the app builder be aware of when creating the custom report type? ",
-    "answers": {
-      "first_answer": "An app builder is unable to create custom report types for objects they do NOT have permissions for. ",
-      "second_answer": "Once the report type has been deployed it is unable to be deleted. ",
-      "third_answer": "A primary object selection is locked once the custom report type has been saved. ",
-      "fourth_answer": "When a custom or external object is deleted the report type and reports remain but "
-    },
-    "true_answer": "3"
-  },
-  {
-    "question": "Universal Containers is piloting new features in an existing sandbox and wants to prevent \noutbound email sends during testing. What should the app builder do to meet the requirement? \n",
-    "answers": {
-      "first_answer": "Email configured for SMTP authentication ",
-      "second_answer": "Email deliverability set to no access",
-      "third_answer": "Email relay to the configured host enabled",
-      "fourth_answer": "Email deliverability set to system email only. "
-    },
-    "true_answer": "2"
-  },
-  {
     "question": "Universal Container (UC) has a time-sensitive need for a custom component to be built in 4 weeks.UC developers require additional enablement to complete the work and are backlogged by several months. What option should an app builder suggest to meet this requirement? \n",
     "answers": {
       "first_answer": "Build a screen flow page.",
@@ -908,4 +888,5 @@
     },
     "true_answer": "4"
   }
+
 ]
