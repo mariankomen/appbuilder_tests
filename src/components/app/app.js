@@ -18,6 +18,7 @@ const App = () => {
 
                 <Header/>
                 <Route path='/' exact render={() => <Homepage/>}/>
+                <Route path='/home' exact render={() => <Homepage/>}/>
                 <Route path='/first' render={() => <FirstSetAppbuilder/>}/>
                 <Route path='/second' render={() => <SecondSetAppbuilder/>}/>
                 <Route path='/third' render={() => <ThirdSetAppbuilder/>}/>

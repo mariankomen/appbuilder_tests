@@ -26,6 +26,7 @@ const QuestionItem = (props) => {
             setSecond(false)
             setThird(false)
             setFourth(false)
+
         } else {
             alert(`
                                 Answer is INCORRECT!!!

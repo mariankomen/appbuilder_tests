@@ -11,3 +11,15 @@ body {
     display: flex;
     justify-content: center;
 }
+@media only screen and (device-width: 375px){
+    .logo {
+        margin-top: 10px;
+        width: 90%;
+    }
+    .main {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}

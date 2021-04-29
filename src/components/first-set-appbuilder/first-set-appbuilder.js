@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import QuestionItem from "../question-item/question-item";
 import style from "../../assets/styles/scss/app.module.css";
+import s from '../../assets/styles/scss/true-totop.module.css'
+
 
 const FirstSetAppbuilder = () => {
     const db = require('../../set_1.json')
@@ -20,9 +22,9 @@ const FirstSetAppbuilder = () => {
     }
     return (
         <div id={'toppos'}>
-            <span className={style.answers}>True answers: {ANSWER} of {db.length}</span>
+            <span className={`${style.answers} ${s.answers}`}>True answers: {ANSWER} of {db.length}</span>
 
-            <span ><button className={style.topButton}
+            <span ><button className={`${style.topButton} ${s.topButton}`}
                            onClick={() => top()}
             >To top</button></span>
             {items}

@@ -1,0 +1,9 @@
+@media only screen and (device-width: 375px){
+    .answers {
+        position: static;
+    }
+    .topButton{
+        display: none;
+    }
+
+}

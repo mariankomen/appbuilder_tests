@@ -55,3 +55,24 @@
 .general__question__inputs:last-child{
   margin-bottom: 50px;
 }
+@media only screen and (device-width: 375px){
+  body{
+    overflow-x: hidden;
+  }
+  .general{
+    width: 97%;
+    max-height: 10000px;
+    border: 1px solid #666;
+    font-size: 0.8rem;
+    padding: 5px;
+
+  }
+  .general__question__inputs__item{
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+  .general__question__inputs__item:first-child{
+    margin-right: 0;
+  }
+
+}

@@ -10,3 +10,17 @@ a:hover {
 .active {
     color: #95d0ff;
 }
+
+@media only screen and (device-width: 375px){
+    .main a{
+        font-size: 12px;
+    }
+    .login{
+        display: none;
+    }
+    .item {
+        display: none;
+    }
+
+
+}

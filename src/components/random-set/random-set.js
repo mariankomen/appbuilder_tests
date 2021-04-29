@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import QuestionItem from "../question-item/question-item";
 import style from "../../assets/styles/scss/app.module.css";
+import s from "../../assets/styles/scss/true-totop.module.css";
 
 const RandomSet = () => {
     const db = require('../../database.json')
@@ -25,7 +26,7 @@ const RandomSet = () => {
     />)
     return (
         <div>
-            <span className={style.answers}>True answers: {ANSWER}</span>
+            <span className={`${style.answers} ${s.answers}`}>True answers: {ANSWER}</span>
             {items}
         </div>
     );
