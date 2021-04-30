@@ -11,8 +11,11 @@ const RandomSet = () => {
     const random_set = []
 
     const [ANSWER, setANSWER] = useState(0)
+    // for(let i = 0; i<1; i++){
+    //     random_set.push(all[Math.floor(Math.random()*all.length)])
+    // }
     for(let i = 0; i<1; i++){
-        random_set.push(all[Math.floor(Math.random()*all.length)])
+        random_set.push(db_2[Math.floor(Math.random()*db_2.length)])
     }
 
     let items = random_set.map(item => <QuestionItem question={item.question}
