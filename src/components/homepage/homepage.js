@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from '../../assets/styles/scss/homepage.module.css'
 import logo from '../../assets/images/logo.png'
+import QuizItem from "../quiz-item";
 
 const Homepage = () => {
     return (

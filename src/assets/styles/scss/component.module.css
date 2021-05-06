@@ -1,0 +1,89 @@
+.main_block {
+  width: 1200px;
+  height: 630px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.logo_bot img {
+  width: 1200px;
+}
+
+.test_rightbar {
+  display: flex;
+  border: 10px solid silver;
+  border-radius: 10px;
+}
+
+.rightbar img {
+  height: 550px;
+}
+
+.test_block {
+  width: 1100px;
+  height: 470px;
+  background-color: white;
+}
+
+.two_logos img {
+  height: 130px;
+  width: 100%;
+}
+
+.test_item {
+  width: 900px;
+  height: 330px;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+}
+
+.counter_question {
+  width: 100px;
+  background-color: white;
+  padding-top: 50px;
+  text-align: right;
+}
+
+.test {
+  width: 85%;
+  height: 100%;
+  background-color: white;
+}
+
+.general__question__text {
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  font-size: 14px;
+}
+
+.general__question__inputs__item {
+  display: flex;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.button {
+  display: flex;
+  float: right;
+  margin-top: 25px;
+}
+.button__item {
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  background-color: #939598;
+  padding: 10px;
+  color: white;
+  margin-right: 10px;
+}
+.button__item:hover {
+  cursor: pointer;
+}
+
+.general__question__inputs__item input {
+  margin-right: 10px;
+}

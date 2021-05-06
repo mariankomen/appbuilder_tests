@@ -13,9 +13,11 @@ const SecondSetAppbuilder = () => {
                                              second_answer={item.answers.second_answer}
                                              third_answer={item.answers.third_answer}
                                              fourth_answer={item.answers.fourth_answer}
+                                             five_answer={item.answers.five_answer}
                                              true_answer={item.true_answer}
                                              setANSWER={setANSWER}
                                              ANSWER={ANSWER}
+                                             obj = {item}
     />)
     function top() {
         document.getElementById( 'toppos' ).scrollIntoView({block: "start", behavior: "smooth"});

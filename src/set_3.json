@@ -14,10 +14,11 @@
     "answers": {
       "first_answer": "Disable Grant Access Using Hierarchies. ",
       "second_answer": "Add a Master-Detail(User) field on the Review object",
-      "third_answer": "Create a criteria-based Sharing Rule for the HR Department",
-      "fourth_answer": "Set organization-wide default to Private."
+      "third_answer": "Remove Review Read permission from non-HR Departament user Profiles",
+      "fourth_answer": "Create a criteria-based Sharing Rule for the HR Departament.",
+      "five_answer": "Set organization-wide default to Private"
     },
-    "true_answer": "1,3,4"
+    "true_answer": "1,4,5"
   },
   {
     "question": "An app builder at Universal Containers wants to prevent users from creating new records on an Account related list by overriding standard buttons.Which two aspects should the app builder consider before overriding standard buttons?Choose 2 answers",
@@ -72,12 +73,13 @@
   {
     "question": "Due to the complexity of the Universal Containers sandbox release schedule and requirements, it is advised that change sets are used as often as possible to migrate from one environment to another. Which three common items can an app builder move when using a change set? Choose 3 answers",
     "answers": {
-      "first_answer": "Standard fields",
-      "second_answer": "Custom object",
-      "third_answer": "Apex class",
-      "fourth_answer": "Custom field"
+      "first_answer": "Web-to-lead",
+      "second_answer": "Standart fields",
+      "third_answer": "Custom object",
+      "fourth_answer": "Apex class",
+      "five_answer": "Custom field"
     },
-    "true_answer": "2,3,4"
+    "true_answer": "3,4,5"
   },
   {
     "question": "An app builder has deployed a change set from a sandbox to production. There is a long delay in the deployment. What can be causing the delay?",
@@ -112,12 +114,13 @@
   {
     "question": "Universal Containers (UC) wants to streamline its data capture process by linking fields together. UC wants to do this so that the available values on dependent fields are driven by values selected on controlling fields. Which three considerations support the stated requirements? Choose 3 answers",
     "answers": {
-      "first_answer": "Checkbox fields can be controlling fields but not dependent fields.",
-      "second_answer": "Custom picklist fields can be either controlling or dependent fields.",
-      "third_answer": "Standard and custom picklist fields can be dependent fields.",
-      "fourth_answer": "The data import wizards only allow values to be imported into a dependent picklist if they match the appropriate controlling field."
+      "first_answer": "Multi-select picklists can be dependent picklists but not controlling fields",
+      "second_answer": "Checkbox fields can be controlling fields but not dependent fields.",
+      "third_answer": "Custom picklist fields can be either controlling or dependent fields.",
+      "fourth_answer": "Standard and custom picklist fields can be dependent fields.",
+      "five_answer": "  The data import wizards only allow values to be imported into a dependent picklist if they match the appropriate controlling field."
     },
-    "true_answer": "2,3,4"
+    "true_answer": "1,2,3"
   },
   {
     "question": "Universal Containers has a customer base where many customers have the same or similar company names. Which functionality should be configured to improve an end user's search experience? Choose 2 answers",
@@ -375,9 +378,10 @@
       "first_answer": "Review the Contact record and ensure it is linked to an Account.",
       "second_answer": "Create a new Contact and have the users try again.",
       "third_answer": "Confirm whether Default Organization-Wide Sharing Settings provide access to the Account.",
-      "fourth_answer": "Verify the users with the issue have access to the Contact object."
+      "fourth_answer": "Create an Account Sharing Rule to give the users access to all records.",
+      "five_answer": "Verify the users with the issue have access to the Contact object."
     },
-    "true_answer": "1,3,4"
+    "true_answer": "1,3,5"
   },
   {
     "question": "An app builder wants to show Groups as the last navigation menu item in the mobile app. However, the app builder is unable to select Groups as one of the items on the drop-down menu. What could cause this?",
@@ -445,7 +449,8 @@
       "first_answer": "Invocable Process Builder",
       "second_answer": "Task",
       "third_answer": "Email Alert",
-      "fourth_answer": "Outbound Message"
+      "fourth_answer": "Outbound Message",
+      "five_answer": "Invocable Flow"
     },
     "true_answer": "2,3,4"
   },
@@ -537,7 +542,7 @@
       "third_answer": "Select the correct record type.",
       "fourth_answer": "Use Data Loader to update leads using the CSV file."
     },
-    "true_answer": "2,4"
+    "true_answer": "1,4"
   },
   {
     "question": "An app builder has created a custom Lightning App and wants to make it available to the internal users at Universal Containers. Which two steps are necessary to accomplish this task?",

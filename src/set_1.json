@@ -23,11 +23,12 @@
     "question": "Due to the complexity of the Universal Containers sandbox release schedule and requirements, it is advised that change sets are used as often as possible to migrate from one environment to another. Which three common items can an app builder move when using a change set? Choose 3 answers. ",
     "answers": {
       "first_answer": "Web-to-lead ",
-      "second_answer": "Custom object ",
-      "third_answer": "Apex class ",
-      "fourth_answer": "Custom field "
+      "second_answer": "Standart fields",
+      "third_answer": "Custom Object",
+      "fourth_answer": "Apex class",
+      "five_answer" : "Custom field"
     },
-    "true_answer": "2,3,4"
+    "true_answer": "3,4,5"
   },
   {
     "question": "An app builder has been tasked with creating separate Opportunity views for three different teams. Each team different sales process and should see different values for the same fields. Which three declarative options should they use to accomplish this? Choose 3 answers. ",
@@ -35,7 +36,9 @@
       "first_answer": "Profiles ",
       "second_answer": "Apex Trigger ",
       "third_answer": "Page Layouts ",
-      "fourth_answer": "Path "
+      "fourth_answer": "Path ",
+      "five_answer" : "Schema Builder"
+
     },
     "true_answer": "1,3,4"
   },
@@ -175,9 +178,11 @@
       "first_answer": "Update a related record. ",
       "second_answer": "Send an outbound message. ",
       "third_answer": "Send an email alert. ",
-      "fourth_answer": "Create a child record. "
+      "fourth_answer": "Delete a related record",
+      "five_answer" : "Create a child record. "
+
     },
-    "true_answer": "1,3,4"
+    "true_answer": "1,3,5"
   },
   {
     "question": "Universal Containers wants the sales reps to clean up its Salesforce customer contacts using the Contacts tab. Which two solutions can be used to support and simplify this process using a list view? Choose 2 answers. ",
@@ -275,7 +280,8 @@
       "first_answer": "The CSV should be property formatted and deduplicated prior to insertion via the Data Import Wizard to maintain data cleanliness. ",
       "second_answer": "Related Lead, Contact, and Campaign records for the Campaign Members should exist prior to import. ",
       "third_answer": "The Data Import Wizard should be accessed from the object home page or from personal settings since they are not System Administrator. ",
-      "fourth_answer": "When importing Campaign Members to a Campaign, a status does not need to be selected because the default member status is ‘Planned’. "
+      "fourth_answer": "When importing Campaign Members to a Campaign, a status does not need to be selected because the default member status is ‘Planned’. ",
+      "five_answer": "Inserting new Campaign Members prohibits workflow rules and processes for any records that meet automation criteria."
     },
     "true_answer": "1,2,3"
   },
@@ -385,9 +391,10 @@
       "first_answer": "Flow ",
       "second_answer": "Apex ",
       "third_answer": "Workflow ",
-      "fourth_answer": "atProcess Builder "
+      "fourth_answer": "Chatter action",
+      "five_asnwer": "Process Builder "
     },
-    "true_answer": "1,2,4"
+    "true_answer": "1,2,5"
   },
   {
     "question": "Cloud Kicks (CK) wants to track orders against inventory, ensuring its ability to fulfill order requests. CK created a junction object called Request_Inventory__c to enable many-to-many relationships with the Inventory__c and Order__c objects. What does the app builder need to provide to ensure users can view Request_Inventory__c records? ",
@@ -565,9 +572,10 @@
       "first_answer": "Number ",
       "second_answer": "Email",
       "third_answer": "Time",
-      "fourth_answer": "Phone "
+      "fourth_answer": "Date ",
+      "five_answer": "Phone"
     },
-    "true_answer": "1,2,4"
+    "true_answer": "1,2,5"
   },
   {
     "question": "Universal Containers (UC) has a custom Invoice__c object and a custom Invoice_Line_Item__c object. The Invoice_Line_Item__c object has a lookup relationship to the Invoice__c. UC would \nlike to convert the lookup relationship to a master-detail relationship but is unable to do so. Which two reasons could be preventing this relationship conversion? Choose 2 answers. \n",
@@ -584,10 +592,11 @@
     "answers": {
       "first_answer": "Outbound Message ",
       "second_answer": "Task ",
-      "third_answer": "Invocable Process Builder ",
-      "fourth_answer": "Email Alert "
+      "third_answer": "Invocable Flow",
+      "fourth_answer": "Invocable Process Builder",
+      "five_answer": "Email Alert"
     },
-    "true_answer": "1,2,4"
+    "true_answer": "1,2,5"
   },
   {
     "question": "A user is unable to use inline editing on a list view. A quick check verifies the user should be able to perform inline editing as they have been assigned the appropriate permissions. Which two conditions should the app builder review? Choose 2 answers. ",
