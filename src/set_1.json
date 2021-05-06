@@ -627,5 +627,15 @@
       "fourth_answer": "Activity History  "
     },
     "true_answer": "3"
+  },
+  {
+    "question": "CONFIRMTASK",
+    "answers": {
+      "first_answer": "CONFIRMTASK",
+      "second_answer": "CONFIRMTASK",
+      "third_answer": "CONFIRMTASK",
+      "fourth_answer": "CONFIRMTASK"
+    },
+    "true_answer": "1"
   }
 ]

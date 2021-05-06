@@ -7,9 +7,10 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import {NavLink} from "react-router-dom";
-
+import { Dropdown, Menu } from 'semantic-ui-react'
 import '../../assets/styles/scss/burger.css'
 import style from '../../assets/styles/scss/header.module.css'
+import '../../assets/styles/scss/menu.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
     const classes = useStyles();
+    const options = [
+        { key: 1, text: 'Choice 1', value: 1 },
+        { key: 2, text: 'Choice 2', value: 2 },
+        { key: 3, text: 'Choice 3', value: 3 },
+    ]
 
     return (
         <div className={`${classes.root} ${style.main}`}>
@@ -48,20 +54,46 @@ export default function Header() {
                     <Typography variant="h6" className={`${classes.title} ${style.item}`}>
                         <NavLink to='/'>PeekLogic</NavLink>
                     </Typography>
-                    <Typography variant="h5" className={`${classes.title} ${style.item}`}>
-                        <NavLink to='/first' activeClassName={style.active}>First Set</NavLink>
+
+                    <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                        <div className="dropdown">
+                            <button className="dropbtn">App builder </button>
+                            <div className="dropdown-content">
+                                <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                                    <NavLink to='/first' activeClassName={style.active}>First Set</NavLink>
+                                </Typography>
+                                <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                                    <NavLink to='/second' activeClassName={style.active}>Second Set</NavLink>
+                                </Typography>
+                                <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                                    <NavLink to='/third' activeClassName={style.active}>Third Set</NavLink>
+                                </Typography>
+                            </div>
+                        </div>
                     </Typography>
-                    <Typography variant="h5" className={`${classes.title} ${style.item}`}>
-                        <NavLink to='/second' activeClassName={style.active}>Second Set</NavLink>
+
+                    <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                        <div className="dropdown">
+                            <button className="dropbtn">Developer 1 </button>
+                            <div className="dropdown-content">
+                                <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                                    <NavLink to='/first' activeClassName={style.active}>First Set</NavLink>
+                                </Typography>
+                                <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                                    <NavLink to='/second' activeClassName={style.active}>Second Set</NavLink>
+                                </Typography>
+                                <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                                    <NavLink to='/third' activeClassName={style.active}>Third Set</NavLink>
+                                </Typography>
+                            </div>
+                        </div>
                     </Typography>
-                    <Typography variant="h5" className={`${classes.title} ${style.item}`}>
-                        <NavLink to='/third' activeClassName={style.active}>Third Set</NavLink>
-                    </Typography>
+
+
                     <Typography variant="h5" className={`${classes.title} ${style.item}`}>
                         <NavLink to='/random' activeClassName={style.active}>Random Question</NavLink>
                     </Typography>
 
-                    <Button color="inherit" className={style.login}>Login</Button>
                 </Toolbar>
             </AppBar>
         </div>
