@@ -121,16 +121,6 @@
     "true_answer": "4"
   },
   {
-    "question": "Ursa Major Solar’s sales team has been struggling to enter data on mobile since rollout; the team dislikes scrolling through all of the fields to input only the necessary data. How could the app builder solve this with minimal impact to desktop users? \n",
-    "answers": {
-      "first_answer": "Filter components by device using Form Factor",
-      "second_answer": "Update the training documentation with better screenshots.",
-      "third_answer": "Deselect the phone radio button on the Lightning record page assignment",
-      "fourth_answer": "Reorder the fields to make sense for the reps when in the field."
-    },
-    "true_answer": "4"
-  },
-  {
     "question": "Universal Containers uses the Asset object to track products that are installed at customer locations. A new object, Asset_Inventory__c, has been created to capture details about the asset. Which approach should the app builder take to show Asset_Inventory__c as a related list on Asset? \n",
     "answers": {
       "first_answer": "Create a master-detail relationship on Asset to Asset_Inventory__c Add theAsset_Inventory__c related list to the Asset page layout.",
@@ -470,7 +460,7 @@
       "third_answer": "Apex Code",
       "fourth_answer": "AppExchange"
     },
-    "true_answer": "1,3"
+    "true_answer": "1,4"
   },
   {
     "question": "An app builder needs a custom solution and is considering using either AppExchange or their local developer community. Ease of updates is the primary consideration. What should the app builder consider? \n",
@@ -589,7 +579,7 @@
       "first_answer": "Related lists",
       "second_answer": "Highlights panel",
       "third_answer": "Related record",
-      "fourth_answer": "Activities."
+      "fourth_answer": "Activities"
     },
     "true_answer": "4"
   },
@@ -614,14 +604,14 @@
     "true_answer": "4"
   },
   {
-    "question": "Universal Containers has a Lightning record page that supports both the mobile app and desktop. An app builder has downloaded a custom Lightning component from AppExchange, but users are unable to view the component on mobile devices. What can be issue?\n",
+    "question": "Universal Containers has a Lightning record page that supports both the mobile app and desktop. An app builder has downloaded a custom Lightning component from AppExchange, but users are unable to view the component on mobile devices. What can be issue?",
     "answers": {
       "first_answer": "The component has been developed for Desktop Pages.",
       "second_answer": "The component needs to be activated.",
       "third_answer": "The record page needs to be activated.",
       "fourth_answer": "The record page template is unable to support mobile devices. "
     },
-    "true_answer": "2"
+    "true_answer": "1,4"
   },
   {
     "question": "The finance manager at Universal Containers wants to receive a new business notification email each time a new client is won. The sales manager wants to receive a task letting them know to onboard the new client unless it is a top-tier client. Which automation tool should an app builder use to best address all these requests?\n",
@@ -633,5 +623,4 @@
     },
     "true_answer": "4"
   }
-
 ]

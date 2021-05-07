@@ -5,7 +5,6 @@ import toplogo from '../../src/assets/images/top-logo.png'
 import rightbar from '../assets/images/rightbar.png'
 import cryterion from '../assets/images/kryterion.png'
 import test from '../assets/images/img.png'
-import * as Push from 'push.js'
 
 const QuizItem = (props) => {
 
@@ -17,7 +16,6 @@ const QuizItem = (props) => {
     const [styles, setStyles] = useState({backgroundColor: 'white',})
     const [ANSWER, setANSWER] = useState(0)
     const [error, setError] = useState(false)
-
 
     const arr = [first, second, third, fourth, five]
     const arr_1 = []
@@ -34,6 +32,7 @@ const QuizItem = (props) => {
                 setFive(false)
                 props.setPage(props.page + 1)
                 setError(false)
+
             } else {
                 console.log(false)
                 setFirst(false)
@@ -50,11 +49,11 @@ const QuizItem = (props) => {
     }
 
     const confirm_exam = () => {
-        let score = Math.floor((100 * ANSWER) / props.length - 1)
+        let score = Math.floor((100 * ANSWER) / props.length)
         if (score >= 63) {
-            alert(`Pass. ${score} %. ${ANSWER} true answers.`)
+            alert(`Pass. ${score} %. ${ANSWER} true answers of ${props.page}. `)
         } else {
-            alert(`Fail: ${score}%. ${ANSWER} true answers.`)
+            alert(`Fail: ${score}%. ${ANSWER} true answers of ${props.page}. `)
         }
         props.setPage(0)
         setANSWER(0)
@@ -200,7 +199,7 @@ const QuizItem = (props) => {
                                     {/*finish*/}
                                 </div>}
                             {error ? <span
-                                className={style.error}>Pick {props.obj.true_answer.split(',').join('').length} answers!</span> : null}
+                                className={style.error}>You must select exactly {props.obj.true_answer.split(',').join('').length} responses.</span> : null}
                             {/*Finish test block*/}
                         </div>
                     </div>
@@ -211,10 +210,13 @@ const QuizItem = (props) => {
                         <div className={style.button__item}
                              onClick={() => {
                                  button_func()
+                                 if(props.page === props.length-1){
+                                     confirm_exam()
+                                 }
                              }}
                         > {`Next >`} </div>
                         <div className={style.button__item}
-                             onClick={() => {
+                             onClick={(e) => {
                                  alert("Button in development. Please wait)")
                              }}
                         > Review All
@@ -230,7 +232,6 @@ const QuizItem = (props) => {
                 </div>
 
             </div>
-            <script src="push.js"></script>
         </div>
 
     );

@@ -68,6 +68,9 @@ export default function Header() {
                                 <Typography variant="h6" className={`${classes.title} ${style.item}`}>
                                     <NavLink to='/third' activeClassName={style.active}>Third Set</NavLink>
                                 </Typography>
+                                <Typography variant="h6" className={`${classes.title} ${style.item}`}>
+                                    <NavLink to='/fewanswers' activeClassName={style.active}>Few Answers</NavLink>
+                                </Typography>
                             </div>
                         </div>
                     </Typography>

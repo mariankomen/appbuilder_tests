@@ -512,7 +512,7 @@
       "third_answer": "Use Data Loader to import the records.",
       "fourth_answer": "Include the Currency ISO code in all currency fields in the import file."
     },
-    "true_answer": "1,4"
+    "true_answer": "1,3"
   },
   {
     "question": "Universal Containers uses a custom picklist field Account Region on the account record. They want this region to be reflected on all related contact records and stay in sync if the value of this field changes on the Account. Calculator . How should an app builder meet this requirement?",

@@ -26,6 +26,7 @@ const RandomSet = () => {
                                              setANSWER={setANSWER}
                                              ANSWER={ANSWER}
     />)
+
     return (
         <div>
             <span className={`${style.answers} ${s.answers}`}>True answers: {ANSWER}</span>

@@ -1,0 +1,391 @@
+[
+  {
+    "question": "Due to the complexity of the Universal Containers sandbox release schedule and requirements, it is advised that change sets are used as often as possible to migrate from one environment to another. Which three common items can an app builder move when using a change set? Choose 3 answers. ",
+    "answers": {
+      "first_answer": "Web-to-lead ",
+      "second_answer": "Standard fields ",
+      "third_answer": "Custom object ",
+      "fourth_answer": "Apex class ",
+      "five_answer": "Custom field"
+    },
+    "true_answer": "3,4,5"
+  },
+  {
+    "question": "An app builder has been tasked with creating separate Opportunity views for three different teams. Each team different sales process and should see different values for the same fields. Which three declarative options should they use to accomplish this? Choose 3 answers. ",
+    "answers": {
+      "first_answer": "Profiles ",
+      "second_answer": "Apex Trigger ",
+      "third_answer": "Page Layouts ",
+      "fourth_answer": "Path ",
+      "five_answer": "Schema Builder "
+    },
+    "true_answer": "1,3,4"
+  },
+  {
+    "question": "Universal Containers asked the app builder to ensure when an account type changes to Past-Customer the contacts directly related to that account get an update status Re-Market. What automation should the app builder use to accomplish this tasl?",
+    "answers": {
+      "first_answer": "Lightning component  ",
+      "second_answer": "Screen flow ",
+      "third_answer": "Process Builder ",
+      "fourth_answer": "Workflow rule  "
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "Cloud Kicks wants to efficiently increase the company’s adoption of Salesforce while simultaneously moving away from their reliance on spreadsheets. An app builder is given a spreadsheet everyone is sharing that needs to be added to Salesforce. The object with fields needs to be created and the data inserted simultaneously. What tool should be used? ",
+    "answers": {
+      "first_answer": "Lightning Object Creator ",
+      "second_answer": "Import Wizard ",
+      "third_answer": "Data Loader ",
+      "fourth_answer": "Schema Builder "
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "At Usra Solar Major, only users with the Outer Planets profile need to see the Jupiter field on the Solar System object. How would the app builder satisfy this requirement? ",
+    "answers": {
+      "first_answer": "Field-Level Security ",
+      "second_answer": "Defer Calculations ",
+      "third_answer": "Sharing Rule ",
+      "fourth_answer": "Classic Encryption "
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "Coud Kicks wants to summarize the number of open Cases related to an Account, as well as the number of closed Cases to indicate whether customer support utilization is high, medium, or low. Two number fields have been created: NUM_Open_Cases__c and NUM_Closed_Cases__c. Which two automation solutions would meet these business requirements? Choose 2 answers. ",
+    "answers": {
+      "first_answer": "Process Builder ",
+      "second_answer": "Apex ",
+      "third_answer": "AppExchange ",
+      "fourth_answer": "Workflow "
+    },
+    "true_answer": "1,2"
+  },
+  {
+    "question": "An app builder wants to use Process Builder to automate some of the work being done by the sales team. What are three capabilities of Process Builder that can improve productivity? Choose 3 answers. ",
+    "answers": {
+      "first_answer": "Update a related record. ",
+      "second_answer": "Send an outbound message ",
+      "third_answer": "Send an email alert ",
+      "fourth_answer": "Delete a related record ",
+      "five_answer": "Create a child record"
+    },
+    "true_answer": "1,3,5"
+  },
+  {
+    "question": "DreamHouse Realty (DR) employees started using company-owned airplanes for work travel after Usra Major Solar was acquired. DR executives want to automate the submission travel request forms to enforce the internal policy. How should an app builder automate travel requests based on these criteria? ",
+    "answers": {
+      "first_answer": "Workflow rule ",
+      "second_answer": "Process Builder ",
+      "third_answer": "Apex ",
+      "fourth_answer": "Approval process "
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "Cloud Kicks (CK) switched to Lightning Experience and Started using Chatter across its global workforce to support its fast-paced sales cycle. CK loves Chatter but struggle with gathering feedback from core team members, including understanding who is available to respond. Which two ways could CK use Chatter to solve this problem? Choose 2 answers. ",
+    "answers": {
+      "first_answer": "Out of Office ",
+      "second_answer": "Polls ",
+      "third_answer": "Streams  ",
+      "fourth_answer": "Topics "
+    },
+    "true_answer": "1,2"
+  },
+  {
+    "question": "DreamHouse Realty (DHR) recently acquired Cloud Kicks (CK), a company that is still on Salesforce Classic. DHR is keeping the CK Salesforce org; however, it will migrate this org to Lightning Experience. Where should the app builder find prebuilt resources to help with this project and overall adoption? ",
+    "answers": {
+      "first_answer": "AppExchange ",
+      "second_answer": "Import Wizard  ",
+      "third_answer": "Lightning Object Creator   ",
+      "fourth_answer": "Flow Builder  "
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "Cloud Kicks wants a visual representation to track delivery status. What component should an app builder recommend? ",
+    "answers": {
+      "first_answer": "Details  ",
+      "second_answer": "Path ",
+      "third_answer": "Related record ",
+      "fourth_answer": "Related list"
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "Sales reps at Cloud Kicks (CK) forget to submit for approval when CK needs orders reviewed before close won. CK wants to automatically submit Opportunities go into the Secure Commitment Stage to eliminate manual submission. Which three features would meet the business requirements? Choose 3 answers. ",
+    "answers": {
+      "first_answer": "Flow   ",
+      "second_answer": "Apex ",
+      "third_answer": "Workflow ",
+      "fourth_answer": "Chatter action ",
+      "five_answer": "Process Builder "
+    },
+    "true_answer": "1,3,5"
+  },
+  {
+    "question": "Universal Containers needs the 18-digit record ID from Opportunity records when exporting data to Excel in order to ensure each record is treated uniquely. What formula should an app builder use to create this new field? ",
+    "answers": {
+      "first_answer": "CASESAFE(Id)    ",
+      "second_answer": "TEXT(Id)  ",
+      "third_answer": "ISNUMBER(Id)  ",
+      "fourth_answer": "VALUE(Id) "
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "Ursa Major Solar’s service department gets requests for serval types of services, such as installation, repair, and maintenance. Service mangers need to be able to tell when maintenance was last done on an asset to help determine if they are meeting contact agreements, but the last maintenance date can be difficult to determine when there are many work orders related to the asset. They think it would be helpful to have a field auto-populated on the Asset record when a maintenance work order gets closed. What tool should an app builder recommend to help meet this requirement? ",
+    "answers": {
+      "first_answer": "Process Builder  ",
+      "second_answer": "Apex Trigger ",
+      "third_answer": "Visualforce ",
+      "fourth_answer": "Contact Request Flow "
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "Cloud Kicks wants to display the number of Opportunity records associated with each Account. What solution should be used? ",
+    "answers": {
+      "first_answer": "AppExchange offering ",
+      "second_answer": "Lookup field ",
+      "third_answer": "Roll-up summary field  ",
+      "fourth_answer": "Process builder "
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "Universal Containers requires a custom field on the Case object to be automatically updated every time there is an Owner change on the Case. Which two features can be used for this requirement? Choose 2 answers. ",
+    "answers": {
+      "first_answer": "Workflow ",
+      "second_answer": "Schema Builder ",
+      "third_answer": "Approval Process  ",
+      "fourth_answer": "Process Builder "
+    },
+    "true_answer": "1,4"
+  },
+  {
+    "question": "The previous administrator of the Cloud Kicks Salesforce Org always utilized text as the field type when creating new custom fields. Cloud Kicks’ current roadmap requires a project that will clean up this Org during Lightning migration. Which three field types should be considered to keep better track of contact information in fields? Choose 3 answers. ",
+    "answers": {
+      "first_answer": "Number  ",
+      "second_answer": "Email",
+      "third_answer": "Time ",
+      "fourth_answer": "Date ",
+      "five_answer": "Phone"
+    },
+    "true_answer": "1,2,5"
+  },
+  {
+    "question": "Cloud Kicks wants to set up a new opportunity approval process and execute various action items based on the initial submission. Which three action types should an app builder use in the approval process? Choose 3 answers. ",
+    "answers": {
+      "first_answer": "Outbound Message   ",
+      "second_answer": "Task ",
+      "third_answer": "Invocable Flow  ",
+      "fourth_answer": "Invocable Process Builder  ",
+      "five_answer": "Email Alert "
+    },
+    "true_answer": "1,2,5"
+  },
+  {
+    "question": "DreamHouse Realty wants to make sure an Opportunity has a field Expected_Close_Date__c populated before it is allowed to enter the qualified stage. How should an app builder solution this request? ",
+    "answers": {
+      "first_answer": "Page Layout ",
+      "second_answer": "Record Type  ",
+      "third_answer": "Validation Rule ",
+      "fourth_answer": "Activity History "
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "After a deal is closed, Cloud Kicks (CK) wants to assign a user as a customer service manager (CSM) in addition to the account owner and would like a new field to easily track and report which CSM is assigned to the Account. What solution should an app builder use for this request? ",
+    "answers": {
+      "first_answer": "Multi-select picklist field. ",
+      "second_answer": "Text field ",
+      "third_answer": "Picklist field ",
+      "fourth_answer": "Lookup field "
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "An app builder needs to deploy a new account detail page layout from sandbox to production. Which three components should an app builder include in the Change Set to ensure it deploys successfully and visually as expected? Choose 3 answers. ",
+    "answers": {
+      "first_answer": "Detail page layout ",
+      "second_answer": "Custom fields ",
+      "third_answer": "Lightning App Builder ",
+      "fourth_answer": "System administrator profile ",
+      "five_answer": "Custom actions "
+    },
+    "true_answer": "1,2,4"
+  },
+  {
+    "question": "Universal Containers has the Account object’s Org Wide Default set to Private. The Marketing team owns Accounts; however, they also need to be able to see the Sales team’s Aсcounts. Both the Sales and Marketing teams are in completely different branches of the role hierarchy. What feature should be used to enable Marketing to see Sales-owned accounts? ",
+    "answers": {
+      "first_answer": "Public Group ",
+      "second_answer": "Sharing Rules ",
+      "third_answer": "Workflow ",
+      "fourth_answer": "Flow "
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "DreamHouse Realty (DR) has a policy that requires the phone number on Contact to be deleted when the DoNotCall checkbox is checked. What automation tool should the app builder recommend? ",
+    "answers": {
+      "first_answer": "Approval process ",
+      "second_answer": "Quick action ",
+      "third_answer": "Validation rule  ",
+      "fourth_answer": "Workflow rule  "
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "DreamHouse Realty wants to track how many lifts are being installed into customer garages. The To_Be_Installed__c checkbox field on the Lift__c object should be checked and an external system should be noticed via an outbound message the next day when a lift is sold. What automation tool should be used to complete this task? ",
+    "answers": {
+      "first_answer": "Approval process ",
+      "second_answer": "Flow ",
+      "third_answer": "Workflow ",
+      "fourth_answer": "Process Builder "
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "Universal Containers is expecting impacts to operations due to increased demand. The executive team will be reaching out to current customers and want to see the number of open cases for the account and parent account. Which two tools could an app builder combine to display the number of open cases on the account page? Choose 2 answers. ",
+    "answers": {
+      "first_answer": "Approval Process ",
+      "second_answer": "Workflow  ",
+      "third_answer": "Process Builder  ",
+      "fourth_answer": "Flow "
+    },
+    "true_answer": "3,4"
+  },
+  {
+    "question": "Service agent at Ursa Major Solar want a more condensed case view. Service agents also want to be modify the associated contact and account records from the case page layout on the Lightning record page. Which two components should an app builder use to meet these requirements? Choose 2 answers. ",
+    "answers": {
+      "first_answer": "Related record ",
+      "second_answer": "Path   ",
+      "third_answer": "Tabs ",
+      "fourth_answer": "Rich text  "
+    },
+    "true_answer": "1,3"
+  },
+  {
+    "question": "After utilizing the Lightning Object Creator to create a new object, its fields, and to insert all of the data, and app builder now needs to set up the Lightning Record Page. Which component should the app builder have on their Lightning Record Page to see all of the fields from the page layout? ",
+    "answers": {
+      "first_answer": "Record Detail ",
+      "second_answer": "Path   ",
+      "third_answer": "Quip  ",
+      "fourth_answer": "Recommendations "
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "Which three field types could be included when building a Custom Report Type? Choose 3 answers.",
+    "answers": {
+      "first_answer": "Renamed fields from standard objects in their original state.",
+      "second_answer": "Custom fields that have been added to the report types page layout.   ",
+      "third_answer": "Custom metadata field values.   ",
+      "fourth_answer": "Standard age fields on cases and opportunities.  ",
+      "five_answer": "Lookup fields through four levels of lookup relationships. "
+    },
+    "true_answer": "2,4,5"
+  },
+  {
+    "question": "The CFO of Cloud Kicks needs to sign off on any major shoe retail deal that has a discount of more than 30% before the deal can be closed. What feature would be used to handle this requirement? ",
+    "answers": {
+      "first_answer": "Email Alert ",
+      "second_answer": "Approval Process ",
+      "third_answer": "Field Update ",
+      "fourth_answer": "Workflow Rule "
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "Cloud Kicks wants to start tracking how many shoe subscriptions have been sold for each shoe for each shoe catalog. A master-detail relationship exists between the Subscription__c and the Shoe__c objects. What type of field should an app builder create? ",
+    "answers": {
+      "first_answer": "Roll-up summary field ",
+      "second_answer": "Lookup field ",
+      "third_answer": "Master-detail relationship field ",
+      "fourth_answer": "Number field "
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "Universal Containers wants to match Opportunity data from Salesforce to the records in an financial database. What is required to configure an indirect lookup relationship in Salesforce between the Salesforce Opportunity records and those in a financial database? ",
+    "answers": {
+      "first_answer": "CASESAFE(Id) ",
+      "second_answer": "TEXT(Id) ",
+      "third_answer": "External ID ",
+      "fourth_answer": "Salesforce Record Id "
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "DreamHouse Realty is building a custom Lightning app to track its expanding solar water collection business. The Lightning app currently contains a custom Lightning record page with standard components. From which two resources should an app builder get custom components to bring into the new Lightning app? Choose 2 answers. ",
+    "answers": {
+      "first_answer": "Visualforce ",
+      "second_answer": "Import Wizard ",
+      "third_answer": "Apex Code ",
+      "fourth_answer": "AppExchange "
+    },
+    "true_answer": "1,3"
+  },
+  {
+    "question": "Cloud Kicks (CK) wants to simultaneously delete a Supplier__c record and all Supplier_Item__c records if a partnership ends with a supplier. What solution could an app builder use to meet the requirement?",
+    "answers": {
+      "first_answer": "Hierarchical  ",
+      "second_answer": "Many-to-many ",
+      "third_answer": "Indirect lookup ",
+      "fourth_answer": "Master-detail  "
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "Cloud Kicks (CK) wants to begin socializing and collaborating within Salesforce around customer accounts to discuss various topics. CK would like all company employees to see these conversations. Which two features of Chatter would meet CK’s business nеeds? Choose 2 answers. ",
+    "answers": {
+      "first_answer": "Set up new private Chatter groups.   ",
+      "second_answer": "Use Chatter actions to create tasks to complete. ",
+      "third_answer": "Use post action on the Account object. ",
+      "fourth_answer": "Set up new public Chatter groups. "
+    },
+    "true_answer": "3,4"
+  },
+  {
+    "question": "Ursa Major Solar wants to provide sales console users with an incredible experience, with the most-used components easily accessible at all times. What solution can enable reps to see and \naccess these components from anywhere within the app without leaving the page where the team is working? \n",
+    "answers": {
+      "first_answer": "Utility bar  ",
+      "second_answer": "Home Page ",
+      "third_answer": "Global actions ",
+      "fourth_answer": "Favorites "
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "An app builder is creating a Lightning record page and has added Mobile & Lightning Actions to the page layout. What two components could be included on the layout to display the actions? Choose 2 answers. ",
+    "answers": {
+      "first_answer": "Highlights panel ",
+      "second_answer": "Activities ",
+      "third_answer": "Chatter ",
+      "fourth_answer": "Path "
+    },
+    "true_answer": "1,2"
+  },
+  {
+    "question": "The appraisal team at DreamHouse Realty wants to leverage Salesforce mobile app. What are three things an app builder should do to optimize mobile experience? Choose 3 answers. ",
+    "answers": {
+      "first_answer": "Minimize the amount of formula fields and lookup fields to reduce page load time. ",
+      "second_answer": "Use Global Actions to make it easy to perform vital functionality on mobile.  ",
+      "third_answer": "Avoid using default field values so that the user is required to fill in all fields on the screen.  ",
+      "fourth_answer": "Create individual customized layouts for different phone operating systems.  ",
+      "five_answer": "Put the most important fields in the compact layout so they are easy to find. "
+    },
+    "true_answer": "1,2,5"
+  },
+  {
+    "question": "The finance manager at Universal Containers wants to receive a new business notification email each time a new client is won. The sales manager wants to receive a task letting them know to onboard the new client unless it is a top-tier client. Which automation tool should an app builder use to best address all these requests? ",
+    "answers": {
+      "first_answer": "Apex ",
+      "second_answer": "Approval Process ",
+      "third_answer": "Flow ",
+      "fourth_answer": "Process Builder "
+    },
+    "true_answer": "4"
+  }
+]

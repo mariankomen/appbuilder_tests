@@ -163,7 +163,7 @@
     "true_answer": "1,2"
   },
   {
-    "question": "Universal Containers wants users to have access to the pricing guidelines document when viewing a Contract related to an Account. What feature should an app builder use to create easy access to the document? What feature should an app builder use to create easy access to the document? A. A custom detail page link on the Account object ",
+    "question": "Universal Containers wants users to have access to the pricing guidelines document when viewing a Contract related to an Account. What feature should an app builder use to create easy access to the document? What feature should an app builder use to create easy access to the document?",
     "answers": {
       "first_answer": "A custom detail page link on the Account object ",
       "second_answer": "Quick Action on the Account object",
@@ -627,15 +627,5 @@
       "fourth_answer": "Activity History  "
     },
     "true_answer": "3"
-  },
-  {
-    "question": "CONFIRMTASK",
-    "answers": {
-      "first_answer": "CONFIRMTASK",
-      "second_answer": "CONFIRMTASK",
-      "third_answer": "CONFIRMTASK",
-      "fourth_answer": "CONFIRMTASK"
-    },
-    "true_answer": "1"
   }
 ]
