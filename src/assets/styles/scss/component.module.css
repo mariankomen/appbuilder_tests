@@ -8,13 +8,14 @@
 }
 
 .logo_bot img {
-  width: 1200px;
+  width: 1204px;
+  margin-bottom: -6px;
+  margin-left: -4px;
 }
 
 .test_rightbar {
   display: flex;
-  border: 10px solid silver;
-  border-radius: 10px;
+  border: 10px solid #e8e8e8;
 }
 
 .rightbar img {
@@ -64,6 +65,7 @@
   display: flex;
   padding: 5px;
   font-size: 15px;
+  align-items: center;
 }
 
 .button {
@@ -86,5 +88,11 @@
 }
 
 .general__question__inputs__item input {
-  margin-right: 10px;
+  margin-left: 4px;
+  margin-right: 5px;
+}
+
+.error {
+  color: #ba1414;
+  font-weight: bold;
 }

@@ -16,6 +16,7 @@ const QuizItem = (props) => {
     const [styles, setStyles] = useState({backgroundColor: 'white',})
     const [ANSWER, setANSWER] = useState(0)
     const [error, setError] = useState(false)
+    const [false_answer, setFalse_answer] = useState([])
 
     const arr = [first, second, third, fourth, five]
     const arr_1 = []
@@ -40,8 +41,10 @@ const QuizItem = (props) => {
                 setThird(false)
                 setFourth(false)
                 setFive(false)
+                false_answer.push(props.page+1)
                 props.setPage(props.page + 1)
                 setError(false)
+                // setFalse_answer(prev => [prev, props.page])
             }
         } else {
             setError(true)
@@ -53,7 +56,10 @@ const QuizItem = (props) => {
         if (score >= 63) {
             alert(`Pass. ${score} %. ${ANSWER} true answers of ${props.page}. `)
         } else {
-            alert(`Fail: ${score}%. ${ANSWER} true answers of ${props.page}. `)
+            alert(`Fail: ${score}%. ${ANSWER} true answers of ${props.page}.
+            
+            ${false_answer.slice(false_answer.length-props.page+1).join(`, `)}
+             `)
         }
         props.setPage(0)
         setANSWER(0)
@@ -66,8 +72,10 @@ const QuizItem = (props) => {
         }
     }, arr)
 
+
     return (
         <div className={style.main_block}>
+
             <div className={style.logo_bot}><img src={toplogo} alt={'Logo'}/></div>
             <div className={style.test_rightbar}>
                 <div className={style.test_block}>
@@ -150,7 +158,8 @@ const QuizItem = (props) => {
                                                   }}
                                             > E. <input type='radio'
                                                         checked={five}
-                                            /><p>{props.obj.answers.five_answer}</p></span> : null}
+                                            /><p className={style.answer}
+                                            >{props.obj.answers.five_answer}</p></span> : null}
                                     </div>
                                     {/*finish*/}
                                 </div>
@@ -205,7 +214,13 @@ const QuizItem = (props) => {
                     </div>
                     <div className={style.button}>
                         <div className={style.button__item}
-                             onClick={() => props.setPage(props.page - 1)}
+                             onClick={() => {
+                                 if(props.page > 0){
+                                     props.setPage(props.page - 1)
+                                 } else {
+                                     props.setPage(0)
+                                 }
+                             }}
                         > {`< Back`} </div>
                         <div className={style.button__item}
                              onClick={() => {
