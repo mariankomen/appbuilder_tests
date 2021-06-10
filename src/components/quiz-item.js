@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import style from '../assets/styles/scss/component.module.css'
 import toplogo from '../../src/assets/images/top-logo.png'
 import rightbar from '../assets/images/rightbar.png'
-import cryterion from '../assets/images/kryterion.png'
+import cryterion from '../assets/images/img.png'
 import test from '../assets/images/img.png'
 
 const QuizItem = (props) => {

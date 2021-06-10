@@ -87,7 +87,7 @@
       "third_answer": "Developer and Developer Pro sandboxes have different storage limits.",
       "fourth_answer": "Data import wizard is a client application provided by Salesforce."
     },
-    "true_answer": "2,3"
+    "true_answer": "1,3"
   },
   {
     "question": "Universal Containers uses a Master-Detail relationship and stores the availability date on each Line Item of an Order and Orders are only\nshipped when all of the Line Items are available.\n9e\ng Which method should be used to calculate the estimated ship date for an Order?",
@@ -107,7 +107,7 @@
       "third_answer": "A Lightning page in Salesforce Classic and a Visualforce page in Lightning Experience",
       "fourth_answer": "A Lightning component in Salesforce Classic and a Lightning component in Lightning Experience"
     },
-    "true_answer": "4"
+    "true_answer": "1"
   },
   {
     "question": "Which three statements are true regarding custom exceptions in Apex?\nChoose 3 answers",
@@ -288,7 +288,7 @@
       "third_answer": "Lightning component HTML files represent the Model (M) part of the MVC framework.",
       "fourth_answer": "Validation rules enforce business rules and represent the Controller (C) part of the MVC framework."
     },
-    "true_answer": "1,3"
+    "true_answer": "2,3"
   },
   {
     "question": "Which code should be used to update an existing Visualforce page that uses standard Visualforce components so that the page matches the [\nlook and feel of Lightning Experience?",
@@ -551,7 +551,7 @@
       "fourth_answer": "Workflows can be used to check the record criteria and send an outbound message.",
       "five_answer": "Approval Process has the capability to check the record criteria and send an outbound message without Apex code. (a"
     },
-    "true_answer": "1,2,5"
+    "true_answer": "1,4,5"
   },
   {
     "question": "A developer must troubleshoot to pinpoint the causes of performance issues when a custom page loads in their org.Which tool should the developer use to troubleshoot?",
