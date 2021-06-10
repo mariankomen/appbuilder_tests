@@ -611,7 +611,7 @@
       "third_answer": "The record page needs to be activated.",
       "fourth_answer": "The record page template is unable to support mobile devices. "
     },
-    "true_answer": "1,4"
+    "true_answer": "2"
   },
   {
     "question": "The finance manager at Universal Containers wants to receive a new business notification email each time a new client is won. The sales manager wants to receive a task letting them know to onboard the new client unless it is a top-tier client. Which automation tool should an app builder use to best address all these requests?\n",

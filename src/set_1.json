@@ -210,7 +210,7 @@
       "first_answer": "In the Territory Model, set Case Access to “View”. ",
       "second_answer": "Create a sharing set to share Cases with the internal sales reps. ",
       "third_answer": "Add sales reps to the Account Team for Accounts, with Read Only access to Cases. ",
-      "fourth_answer": "AtSet sharing for Cases to Private. "
+      "fourth_answer": "Set sharing for Cases to Private. "
     },
     "true_answer": "2,4"
   },
@@ -258,7 +258,7 @@
     "question": "When a sales rep submits an account for approval, Universal Containers wants the user to answer additional questions via a popup window to populate additional record fields. What should an app builder use to achieve the desired result? ",
     "answers": {
       "first_answer": "Custom picklist field and Process Builder ",
-      "second_answer": "AtProcess Builder and Flow ",
+      "second_answer": "Process Builder and Flow ",
       "third_answer": "Custom button and Flow ",
       "fourth_answer": "Lightning component and Process Builder "
     },
@@ -392,7 +392,7 @@
       "second_answer": "Apex ",
       "third_answer": "Workflow ",
       "fourth_answer": "Chatter action",
-      "five_asnwer": "Process Builder "
+      "five_answer": "Process Builder "
     },
     "true_answer": "1,2,5"
   },

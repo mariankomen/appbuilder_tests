@@ -80,10 +80,10 @@ export default function Header() {
                             <button className="dropbtn">Developer 1 </button>
                             <div className="dropdown-content">
                                 <Typography variant="h6" className={`${classes.title} ${style.item}`}>
-                                    <NavLink to='/first' activeClassName={style.active}>First Set</NavLink>
+                                    <NavLink to='/dev/first' activeClassName={style.active}>First Set</NavLink>
                                 </Typography>
                                 <Typography variant="h6" className={`${classes.title} ${style.item}`}>
-                                    <NavLink to='/second' activeClassName={style.active}>Second Set</NavLink>
+                                    <NavLink to='/dev/second' activeClassName={style.active}>Second Set</NavLink>
                                 </Typography>
                                 <Typography variant="h6" className={`${classes.title} ${style.item}`}>
                                     <NavLink to='/third' activeClassName={style.active}>Third Set</NavLink>
