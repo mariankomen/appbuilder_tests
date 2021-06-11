@@ -190,7 +190,7 @@
     "true_answer": "4"
   },
   {
-    "question": "3.\tA developer wants to invoke an outbound message when a record meets a specific criteria. Which three features satisfy this use case? 3 answers \n",
+    "question": "A developer wants to invoke an outbound message when a record meets a specific criteria. Which three features satisfy this use case? 3 answers \n",
     "answers": {
       "first_answer": "Workflows can be used to check the record criteria and send an outbound message. ",
       "second_answer": "Flow Builder can be used to check the record criteria and send an outbound message without additional code.  ",
@@ -279,6 +279,16 @@
       "fourth_answer": "Use the static keyword and assign its value in the class constructor."
     },
     "true_answer": "1,2"
+  },
+  {
+    "question": "When a user edits the Postal Code on an Account, a custom Account text field named 'Timezone' must be updated based on the values in a\nPostalCodeToTimezone__c custom object. How can a developer implement this feature?",
+    "answers": {
+      "first_answer": "Build a Flow with Flow Builder.",
+      "second_answer": " Build an Account Assignment Rule.",
+      "third_answer": "Build an Account Approval Process.",
+      "fourth_answer": "Build a Workflow Rule."
+    },
+    "true_answer": "1"
   },
   {
     "question": "3.\tWhich statement generates a list of Leads and Contacts that have a field with the phrase ‘ACME’? \n",
@@ -411,16 +421,6 @@
     "true_answer": "2"
   },
   {
-    "question": "3.\tWhich code in a Visualforce page and/or controller might present a security vulnerability? \n",
-    "answers": {
-      "first_answer": "<apex:outputField value='{!ctrl.userInput}' /> ",
-      "second_answer": "<apexioutputText escape='false' value='{!SCurrentPage.parameters.userInput})' /> ",
-      "third_answer": "<apexioutputField escape='false' value='{!ctrl.userInput}' /> ",
-      "fourth_answer": "<apexioutputField escape='false' value='{!ctrl.userInput}' /> "
-    },
-    "true_answer": "2"
-  },
-  {
     "question": "3.\tApplication Events follow the traditional publish-subscribe model. Which method is used to fire an event?  \n",
     "answers": {
       "first_answer": "registerEvent() ",
@@ -431,33 +431,25 @@
     "true_answer": "3"
   },
   {
-    "question": "3.\tGiven the code below: List<Account> alist = [SELECT Id FROM Account]; for (Account a : aList){ List<Contact> cList = [SELECT Id FROM Contact WHERE AccountId = :a.Id); } What should a developer do to correct the code so that there is no chance of hitting a governor limit? \n",
+    "question": "Given the code below: List<Account> alist = [SELECT Id FROM Account]; for (Account a : aList){ List<Contact> cList = [SELECT Id FROM Contact WHERE AccountId = :a.Id); } What should a developer do to correct the code so that there is no chance of hitting a governor limit? \n",
     "answers": {
       "first_answer": "Rework the code and eliminate the for loop.",
       "second_answer": "combine the two SELECT statements into a single SOQL statement. ",
       "third_answer": "Add a WHERE clause to the first SELECT SOQL statement. ",
       "fourth_answer": "Add a LIMIT clause to the first SELECT SOQL statement."
     },
-    "true_answer": "4"
+    "true_answer": "1"
   },
-
-
-
-
-
-
-
-
-
   {
     "question": "3.\tWhich three resources in an Aura Component can contain JavaScript functions? Choose 3 answers \n",
     "answers": {
       "first_answer": "Design ",
       "second_answer": "Controller ",
-      "third_answer": "Renderer",
-      "fourth_answer": "Style"
+      "third_answer": "Helper",
+      "fourth_answer": "Style",
+      "five_answer": "Renderer"
     },
-    "true_answer": "2,3,4"
+    "true_answer": "2,3,5"
   },
   {
     "question": "3.\tWhat should a developer use to obtain the Id and Name of all the Leads, Accounts, and Contacts that have the company name 'Universal } | Containers'? \n",
@@ -475,9 +467,10 @@
       "first_answer": "A custom exception class cannot contain member variables or methods. ",
       "second_answer": "A custom exception class can extend other classes besides the Exception class.",
       "third_answer": "A custom exception class must extend the system Exception class.",
-      "fourth_answer": "A custom exception class can implement one or many interfaces."
+      "fourth_answer": "A custom exception class name must end with “Exception”.",
+      "five_answer": "A custom exception class can implement one or many interfaces."
     },
-    "true_answer": "2,3,4"
+    "true_answer": "2,4,5"
   },
   {
     "question": "3.\tIf Apex code executes inside the execute () method of an Apex class when implementing the Batchable interface, which two statement are true regarding governor limits? Choose 2 answers \n",
@@ -487,7 +480,7 @@
       "third_answer": "The Apex governor limits might be higher due to the asynchronous nature of the transaction.",
       "fourth_answer": "The Apex governor limits are relaxed while calling the constructor of the Apex class. "
     },
-    "true_answer": "2,4"
+    "true_answer": "1,3"
   },
   {
     "question": "3.\tWhich process automation should be used to send an outbound message without using Apex code? \n",
@@ -517,7 +510,7 @@
       "third_answer": "Collect the insert method return value in a SaveResult record.",
       "fourth_answer": "Add a System.debug() statement before the insert method."
     },
-    "true_answer": "4"
+    "true_answer": "3"
   },
   {
     "question": "3.\tUniversal Containers (UC) uses a custom object called Vendor. The Vendor custom object has a Master-Detail relationship with the standard Account object. Based on some internal discussions, the UC administrator tried to change the Master-Detail relationship to a Lookup relationship but was not able to do so.What is a possible reason that this change was not permitted? \n",
@@ -537,7 +530,7 @@
       "third_answer": "Select and run the class on the Apex Test Execution page. ",
       "fourth_answer": "View the Code Coverage column in the list view on the Apex Classes page."
     },
-    "true_answer": "1"
+    "true_answer": "2"
   },
   {
     "question": "3.\tWhich two statements are true about using the @testSetup annotation in an Apex test class? Choose 2 answers \n",
@@ -550,12 +543,13 @@
     "true_answer": "2,4"
   },
   {
-    "question": "3.\tWhich three steps allow a custom SVG to be included in a Lightning web component? Choose 3 answers \n",
+    "question": "Which three steps allow a custom SVG to be included in a Lightning web component? Choose 3 answers \n",
     "answers": {
       "first_answer": "Reference the import in the HTML template. ",
       "second_answer": "Import the static resource and provide a getter for it in JavaScript.",
       "third_answer": "Reference the getter in the HTML template. ",
-      "fourth_answer": "Upload the SVG as a static resource."
+      "fourth_answer": "Upload the SVG as a static resource.",
+      "five_answer": "Import the SVG as a content asset file."
     },
     "true_answer": "2,3,4"
   },
@@ -563,11 +557,12 @@
     "question": "3.\tWhat are three considerations when using the ¢InvocableMethod annotation in Apex? Choose 3 answers \n",
     "answers": {
       "first_answer": "Only one method using the @InvocableMethod annotation can be defined per Apex class.",
-      "second_answer": "A method using the @invocableMethod annotation must be declared as static. ",
-      "third_answer": "A method using the @invocableMethod annotation can have multiple input parameters. ",
-      "fourth_answer": "A method using the @InvocableMethod annotation can be declared as Public or Global."
+      "second_answer": "A method using the @invocableMethod annotation must be declared as static.",
+      "third_answer": "A method using the @invocableMethod annotation can have multiple input parameters.",
+      "fourth_answer": "A method using the @invocableMethod annotation must define a return value.",
+      "five_answer": "A method using the @invocableMethod annotation can be declared as Public or Global"
     },
-    "true_answer": "1,2,4"
+    "true_answer": "1,2,5"
   },
   {
     "question": "3.\tUniversal Containers wants to assess the advantages of declarative development versus programmatic customization for specific use cases in its Salesforce implementation. What are two characteristics of declarative development over programmatic customization? Choose 2 answers \n",
@@ -617,7 +612,7 @@
       "third_answer": "Add a Master-Detail field on the Global Address object to the Account object.",
       "fourth_answer": "Add a Master-Detail field on the Account object to the Global Address object."
     },
-    "true_answer": "3"
+    "true_answer": "1"
   },
   {
     "question": "3.\tAn Apex method, getAccounts, that returns a List of Accounts given a searchTerm, is available for Lightning Web components to use. What is the correct definition of a Lightning Web component property that uses the getAccounts method? \n",
