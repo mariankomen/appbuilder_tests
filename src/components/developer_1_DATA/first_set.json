@@ -90,7 +90,7 @@
     "true_answer": "4"
   },
   {
-    "question": "3.\t team of developers is working on a source-driven project that allows them to work independently, with many different org configurations. Which type of Salesforce orgs should they use for their development? \n",
+    "question": "A team of developers is working on a source-driven project that allows them to work independently, with many different org configurations. Which type of Salesforce orgs should they use for their development? \n",
     "answers": {
       "first_answer": "Scratch orgs",
       "second_answer": "Developer orgs ",
@@ -172,7 +172,7 @@
   {
     "question": "3.\tGWhich exception type cannot be caught? \n",
     "answers": {
-      "first_answer": "Which exception type cannot be caught?  ",
+      "first_answer": "A Custom Exception  ",
       "second_answer": "NoAccessException",
       "third_answer": "LimitException ",
       "fourth_answer": "CalloutException "

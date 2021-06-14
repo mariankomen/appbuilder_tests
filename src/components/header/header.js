@@ -86,7 +86,7 @@ export default function Header() {
                                     <NavLink to='/dev/second' activeClassName={style.active}>Second Set</NavLink>
                                 </Typography>
                                 <Typography variant="h6" className={`${classes.title} ${style.item}`}>
-                                    <NavLink to='/third' activeClassName={style.active}>Third Set</NavLink>
+                                    <NavLink to='/dev/third' activeClassName={style.active}>Third Set</NavLink>
                                 </Typography>
                             </div>
                         </div>

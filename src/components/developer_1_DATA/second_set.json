@@ -27,7 +27,7 @@
       "third_answer": "View the Overall Code Coverage panel of the Tests tab in the Developer Console.",
       "fourth_answer": "View the Code Coverage column in the list view on the Apex Classes page."
     },
-    "true_answer": "4"
+    "true_answer": "3"
   },
   {
     "question": "A Lightning component has a wired property, searchResults, that stores a list of Opportunities.\nWhich definition of the Apex method, to which the searchResults property is wired, should be used?",
@@ -97,7 +97,7 @@
       "third_answer": "Use a CEILING formula on each of the latest availability date fields.",
       "fourth_answer": "Use a LATEST formula on each of the latest availability date fields."
     },
-    "true_answer": "2"
+    "true_answer": "1"
   },
   {
     "question": "A developer must provide custom user interfaces when users edit a Contact in either Salesforce Classic or Lightning Experience. |\nWhat should the developer use to override the Contact's Edit button and provide this functionality?",
@@ -107,7 +107,7 @@
       "third_answer": "A Lightning page in Salesforce Classic and a Visualforce page in Lightning Experience",
       "fourth_answer": "A Lightning component in Salesforce Classic and a Lightning component in Lightning Experience"
     },
-    "true_answer": "1"
+    "true_answer": "2"
   },
   {
     "question": "Which three statements are true regarding custom exceptions in Apex?\nChoose 3 answers",
@@ -118,7 +118,7 @@
       "fourth_answer": "A custom exception class name must end with \"Exception\".",
       "five_answer": "A custom exception class must extend the system Exception class."
     },
-    "true_answer": "1,4,5"
+    "true_answer": "1,2,4"
   },
   {
     "question": "Universal Containers has a large number of custom applications that were built using a third-party JavaScript framework and exposed using |\nVisualforce pages. The company wants to update these applications to apply styling that resembles the look and feel of Lightning Experience. aren\nWhat should the developer do to fulfill the business request in the quickest and most effective manner?",
@@ -128,7 +128,7 @@
       "third_answer": "Rewrite all Visualforce pages as Lightning components.",
       "fourth_answer": "Incorporate the Salesforce Lightning Design System CSS stylesheet into the JavaScript applications."
     },
-    "true_answer": "4"
+    "true_answer": "1"
   },
   {
     "question": "Which statement generates a list of Leads and Contacts that have a field with the phrase 'ACME'?",
@@ -188,7 +188,7 @@
       "third_answer": "Use the final keyword and assign its value in the class constructor.",
       "fourth_answer": "Use the static keyword and assign its value in a static initializer."
     },
-    "true_answer": "1,2"
+    "true_answer": "1,3"
   },
   {
     "question": "Which scenario is valid for execution by unit tests?",
@@ -241,7 +241,7 @@
     "true_answer": "1,2"
   },
   {
-    "question": "niversal Containers (UC) wants to lower its shipping cost while making the shipping process more efficient. The Distribution Officer advises\nUC to implement global addresses to allow multiple Accounts to share a default pickup address. The developer is tasked to create the aaaa\nsupporting object and relationship for this business requirement and uses the Setup Menu to create a custom object called \"Global Address\". Which field should the developer add to create the most efficient model that supports the business need?",
+    "question": "Universal Containers (UC) wants to lower its shipping cost while making the shipping process more efficient. The Distribution Officer advises\nUC to implement global addresses to allow multiple Accounts to share a default pickup address. The developer is tasked to create the aaaa\nsupporting object and relationship for this business requirement and uses the Setup Menu to create a custom object called \"Global Address\". Which field should the developer add to create the most efficient model that supports the business need?",
     "answers": {
       "first_answer": "Add a Master-Detail field on the Global Address object to the Account object.",
       "second_answer": "Add a Master-Detail field on the Account object to the Global Address object.",
@@ -288,7 +288,7 @@
       "third_answer": "Lightning component HTML files represent the Model (M) part of the MVC framework.",
       "fourth_answer": "Validation rules enforce business rules and represent the Controller (C) part of the MVC framework."
     },
-    "true_answer": "2,3"
+    "true_answer": "2,4"
   },
   {
     "question": "Which code should be used to update an existing Visualforce page that uses standard Visualforce components so that the page matches the [\nlook and feel of Lightning Experience?",
@@ -318,7 +318,7 @@
       "third_answer": "Add a WHERE clause to the first SELECT SOQL statement.",
       "fourth_answer": "Rework the code and eliminate the for loop."
     },
-    "true_answer": "1"
+    "true_answer": "4"
   },
   {
     "question": "A developer creates a new Apex trigger with a helper class, and writes a test class that only exercises 95% coverage of the new Apex helper @\nclass.\nChange Set deployment to production fails with the test coverage warning:\n“Test coverage of selected Apex Trigger is 0%, at least 1% test coverage is required.' What should the developer do to successfully deploy the new Apex trigger and helper class?",
@@ -388,7 +388,7 @@
       "third_answer": "If executed in a synchronous context, the apex transaction is likely to fail by exceeding the DML governor limit.",
       "fourth_answer": "The Apex transaction succeeds regardless of any uncaught exception and all processed accounts are updated."
     },
-    "true_answer": "4"
+    "true_answer": "2"
   },
   {
     "question": "Which Salesforce feature allows a developer to see when a user last logged in to Salesforce if real-time notification is not required?",
@@ -416,7 +416,7 @@
       "first_answer": "Create a Process Builder on Expense_Report__c to mark the related Expense_Item__c as submittable and a trigger on\nExpense_item__c to submit the records for approval.",
       "second_answer": "Create two Process Builders, one on Expense_Report__c to mark the related Expense _Item__c as submittable and the second\non Expense_Item__¢ to submit the records for approval.",
       "third_answer": "Create a Process Builder on Expense_Report__c with an ‘Apex’ action type to submit all related Expense_Item__c records\nwhen the criteria Is met.",
-      "fourth_answer": "Create a Process Builder on Expense_Report__c with a \"Submit for Approval! action type to submit all related Expense_Item__c\nrecords when the criteria is met."
+      "fourth_answer": "Create a Process Builder on Expense_Report__c with a 'Submit for Approval! action type to submit all related Expense_Item__c\nrecords when the criteria is met."
     },
     "true_answer": "4"
   },
@@ -428,7 +428,7 @@
       "third_answer": "Unlimited processing power and memory",
       "fourth_answer": "Access to predefined computing resources"
     },
-    "true_answer": "2"
+    "true_answer": "1"
   },
   {
     "question": "A developer must create an Apex class, contactController, that a Lightning component can use to search for Contact records. Users of the @\nLightning component should only be able to search for Contact records to which they have access. cues\nWhich two will restrict the records correctly?\nChoose 2 answers",
@@ -519,7 +519,7 @@
       "third_answer": "If a container component needs to handle a component event, add a handleFacets='true' attribute to its handler.",
       "fourth_answer": "Depending on the current propagation phase, calling event .stopPropagation() may not stop the event propagation."
     },
-    "true_answer": "1,3"
+    "true_answer": "2,4"
   },
   {
     "question": "When a user edits the Postal Code on an Account, a custom Account text field named 'Timezone' must be updated based on the values in a |\nPostalCodeToTimezone__c custom object. ———\nCalculator\nHow can a developer implement this feature?",
@@ -601,7 +601,7 @@
       "third_answer": "By writing an After Insert trigger and accessing the field value from Trigger.old",
       "fourth_answer": "By writing an After Update trigger and accessing the field value from Trigger.old"
     },
-    "true_answer": "4"
+    "true_answer": "1"
   },
   {
     "question": "Universal Containers has an order system that uses an Order Number to identify an order for customers and service agents. Order records will be imported into Salesforce. How should the Order Number field be defined in Salesforce?",

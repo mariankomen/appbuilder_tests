@@ -12,6 +12,7 @@ import ThirdSetAppbuilder from "../third-set-appbuilder/third-set-appbuilder";
 import FewAnswersSetAppbuilder from "../few-answers-set-appbuilder/few-answers-set-appbuilder";
 import FirstSetDev from "../developer_1_components/first_set/dev_first";
 import SecondSetDev from "../developer_1_components/second_set/dev_second";
+import ThirdSetDev from "../developer_1_components/third_set/dev_third";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
                 <Route path='/third' render={() => <ThirdSetAppbuilder/>}/>
                 <Route path='/dev/first' render={() => <FirstSetDev/>}/>
                 <Route path='/dev/second' render={() => <SecondSetDev/>}/>
+                <Route path='/dev/third' render={() => <ThirdSetDev/>}/>
                 <Route path='/fewanswers' render={() => <FewAnswersSetAppbuilder/>}/>
                 <Route path='/random' render={() => <RandomSet/>}/>
 

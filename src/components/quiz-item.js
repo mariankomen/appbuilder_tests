@@ -72,7 +72,6 @@ const QuizItem = (props) => {
         }
     }, arr)
 
-
     return (
         <div className={style.main_block}>
 

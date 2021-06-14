@@ -1,0 +1,357 @@
+[
+  {
+    "question": "A developer needs to implement the functionality for a service agent to gather multiple pieces of information from a customer in order to\nsend a replacement credit card.\nWhich automation tool meets these requirements?",
+    "answers": {
+      "first_answer": "Approval Process",
+      "second_answer": "Process Builder",
+      "third_answer": "Flow Builder",
+      "fourth_answer": "Lightning Component"
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "What are two ways that a controller and extension can be specified for a custom object named Notice on a Visualforce page?\n\nChoose 2 answers",
+    "answers": {
+      "first_answer": "apex:page=Notice extends='myControllerExtension”",
+      "second_answer": "apex:page controller='Notice__c” extensions='myControllerExtension”",
+      "third_answer": "apex:page controllers='Notice__c, myControllerExtension”",
+      "fourth_answer": "apex:page standardController='Notice__c” extensions='myControllerExtension'"
+    },
+    "true_answer": "2,4"
+  },
+  {
+    "question": "Universal Containers has a large number of custom applications that were built using a third-party JavaScript framework and exposed using\nVisualforce pages. The company wants to update these applications to apply styling that resembles the look and feel of Lightning Experience.\nWhat should the developer do to fulfill the business request in the quickest and most effective manner?",
+    "answers": {
+      "first_answer": "Enable Available for Lightning Experience, Lightning Communities, and the mobile app on Visualforce pages used by the custom\n\napplication.",
+      "second_answer": "Incorporate the Salesforce Lightning Design System CSS stylesheet into the JavaScript applications.\n",
+      "third_answer": "Set the attribute enableLightning to true in the definition.",
+      "fourth_answer": "Rewrite all Visualforce pages as Lightning components."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "A recursive transaction is initiated by a DML statement creating records for these two objects:\n* Accounts\n* Contacts\n\n \n\nThe Account trigger hits a stack depth of 16. Which statement is true regarding the outcome of the transaction?",
+    "answers": {
+      "first_answer": "The transaction fails and all the changes are rolled back.",
+      "second_answer": "The transaction succeeds as long as the Contact trigger stack depth is less than 16.",
+      "third_answer": "The transaction succeeds and all changes are committed to the database,",
+      "fourth_answer": "The transaction fails only if the Contact trigger stack depth is greater or equal to 16."
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "An Approval Process is defined in the Expensze_Item__c object. A business rule dictates that whenever a user changes the Status to\n‘Submitted’ on an Expense_Report__c record, all the Expense_Item__c records related to the expense report must enter the approval\nprocess individually.\n\nWhich approach should be used to ensure the business requirement is met?",
+    "answers": {
+      "first_answer": "Create two Process Builders, one on Expense_Report__c to mark the related Expense_Item__c as submittable and the second\non Expense_Item__c to submit the records for approval.",
+      "second_answer": "Create a Process Builder on Expense_Report__c with an ‘Apex’ action type to submit all related =xpense_Item__c records\nwhen the criteria is met.",
+      "third_answer": "Create a Process Builder on Expense_Report__c with a ‘Submit for Approval’ action type to submit all related Expense_Item__c\nrecords when the criteria is met.",
+      "fourth_answer": "Create a Process Builder on Expense_Report__c to mark the related Expense_Item__c as submittable and a trigger on\nExpense_item__c to submit the records for approval."
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "Which three statements are accurate about debug logs?",
+    "answers": {
+      "first_answer": "To View Debug Logs, “Manager Users” or \"View All Data” permission is needed.",
+      "second_answer": "Amount of information logged in the debug log can be controlled by the log levels.",
+      "third_answer": "To View Debug Logs, \"Manager Users” or \"Modify All Data” permission is needed.",
+      "fourth_answer": "Debug Log levels are cumulative, where FINE log level includes all events logged at the DEBUG,\nINFO, WARN, and ERROR levels. Pencil & Paper",
+      "five_answer": "Amount of information logged in the debug log can be controlled programatically."
+    },
+    "true_answer": "1,2,4"
+  },
+  {
+    "question": "What are three capabilities of the <1tng:require> tag when loading JavaScript resources in Aura components?\n\nChoose 3 answers",
+    "answers": {
+      "first_answer": "Loading files from Documents",
+      "second_answer": "Specifying loading order",
+      "third_answer": "Loading externally hosted scripts",
+      "fourth_answer": "Loading scripts in parallel",
+      "five_answer": "One-time loading for duplicate scripts"
+    },
+    "true_answer": "2,4,5"
+  },
+  {
+    "question": "Instead of sending emails to support personnel directly from Salesforce from the finish method of a batch process,\nUniversal Containers wants to notify an external system in the event that an unhandled exception occurs.\n\nWhat is the appropriate publish/subscribe logic to meet this requirement?",
+    "answers": {
+      "first_answer": "Publish the error event using the Eventbus.publish() method and have the external system\nsubscribe to the event using CometD.",
+      "second_answer": "Publish the error event using the add=rror(} method and have the external system subscribe to the\n\n \n\n \n\n \n\nevent using CometD. Pencil & Paper",
+      "third_answer": "Publish the error event using the add=rror() method and write a trigger to subscribe to the event maaan\nand notify the external system.",
+      "fourth_answer": "Have the external system subscribe to the BatchApexError event, no publishing is necessary."
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "A developer needs to create a custom button for the Account object that, when clicked, will perform a series of\ncalculations and redirect the user to a custom Visualforce page.\n\nWhich three attributes need to be defined with values in the <apex:page> tag to accomplish this?\n\n \n\nChoose 3 answers",
+    "answers": {
+      "first_answer": "renderAs",
+      "second_answer": "standardController",
+      "third_answer": "action",
+      "fourth_answer": "readOnly",
+      "five_answer": "extensions"
+    },
+    "true_answer": "1,2,3"
+  },
+  {
+    "question": " team of developers is working on a source-driven project that allows them to work independently, with many Ox)\ndifferent org configurations. Which type of Salesforce orgs should they use for their development?",
+    "answers": {
+      "first_answer": "Scratch orgs",
+      "second_answer": "Full Copy sandboxes",
+      "third_answer": "Developer orgs",
+      "fourth_answer": "Developer sandboxes"
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "A developer writes a trigger on the Account object on the before update event that increments a count field. A\nworkflow rule also increments the count field every time that an Account is created or updated. The field update in\nthe workflow rule is configured to not re-evaluate workflow rules.\n\n \n\nWhat is the value of the count field if an Account is inserted with an initial value of zero, assuming no other\nautomation logic is implemented on the Account?",
+    "answers": {
+      "first_answer": "2",
+      "second_answer": "1",
+      "third_answer": "3",
+      "fourth_answer": "4"
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "Given the code below:\n\nList<Account> alist = [SELECT Id FROM Account];\nfor (Account a : alist) {\n\nList<Contact> cList = [SELECT Id FROM Contact WHERE Accountid = :a.Id};\n}\n\nWhat should a developer do to correct the code so that there is no chance of hitting a governor limit?",
+    "answers": {
+      "first_answer": "Add a WHERE clause to the first SELECT SOQL statement.",
+      "second_answer": "combine the two SELECT statements into a single SOQL statement.",
+      "third_answer": "Rework the code and eliminate the for loop.",
+      "fourth_answer": " Add a LIMIT clause to the first SELECT SOQL statement."
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "What is an example of a polymorphic lookup field in Salesforce?",
+    "answers": {
+      "first_answer": "The LeadId and ContactId fields on the standard Campaign Member object",
+      "second_answer": "The Whatid field on the standard Event object",
+      "third_answer": "The Parentid field on the standard Account object",
+      "fourth_answer": "A custom field, Link__c, on the standard Contact object that looks up to an Account or a Campaign"
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "A developer wants to retrieve the Contacts and Users with the email address ‘'dev@uc.com’.\n\nWhich SOSL statement should the developer use?",
+    "answers": {
+      "first_answer": "FIND {Email = 'dev@uc.com'} RETURNING Contact (Email), User (Email)",
+      "second_answer": "FIND Email IN Contact, User FOR {dev2uc.com}",
+      "third_answer": "FIND {dev@uc.com} IN Email ‘tact (Email), User (Email)",
+      "fourth_answer": "FIND {Email = 'dev@uc.com'} IN Contact, User"
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "A team of many developers work in their own individual orgs that have the same configuration as the production org. Which type of org is best suited for this scenario?",
+    "answers": {
+      "first_answer": "Developer Edition",
+      "second_answer": "Developer Sandbox",
+      "third_answer": "Full Sandbox",
+      "fourth_answer": "Partner Developer Edition"
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "What should the developer use, along with a lightning-record-edit-form, so that Salary__\ncurrency input and is only viewable and editable by users that have the correct field level permissions on\nSalary _c?",
+    "answers": {
+      "first_answer": "<lightning-input type='number” value='Salary_c” formatter='currency'></lightning-input>",
+      "second_answer": "<lightning-input-field field-name='Salary_c'™> </lightning-input-field>",
+      "third_answer": "<lightning-input-currency value='Salary_c'™> </lightning-input-currency>",
+      "fourth_answer": "<lightning-formatted-number value='Salary_c' format-style='currency'> </lightning-formatted-number>"
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "Universal Containers stores Orders and Line Items in Salesforce. For security reasons, financial representatives\nare allowed to see information on the Order such as order amount, but they should not be allowed to see the Line\nItems on the Order.\n\n \n\nWhich type of relationship should be used between Orders and Line Items?\n",
+    "answers": {
+      "first_answer": "Indirect Lookup",
+      "second_answer": "Lookup",
+      "third_answer": "Direct Lookup",
+      "fourth_answer": "Master-detail"
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "A custom picklist field, Food_Preference__c, exists on a custom object. The picklist contains the following\n\noptions: \"Vegan', ‘Kosher’, 'No Preference’. The developer must ensure a value is populated every time a record is\ncreated or updated.\n\nWhat is the most efficient way to ensure a value is selected every time a record is saved?",
+    "answers": {
+      "first_answer": "Set a validation rule to enforce a value is selected.",
+      "second_answer": " Mark the field as Required on the field definition.",
+      "third_answer": "Mark the field as Required on the object's page layout.",
+      "fourth_answer": "Set 'Use the first value in the list as the default value” as True."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "What is the result of the following code? =)\nAccount a = new Account(); is\nDatabase.insert(a, false);",
+    "answers": {
+      "first_answer": "The record will not be created and an exception will be thrown.",
+      "second_answer": "The record will be created and a message will be in the debug log.",
+      "third_answer": "The record will be created and no error will be reported.",
+      "fourth_answer": "The record will not be created and no error will be reported."
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "3.\tUniversal Containers wants Opportunities to be locked from editing when it reaches the Closed/Won stage.Which two strategies can a developer use to accomplish this? Choose 2 answers \n",
+    "answers": {
+      "first_answer": "Use Flow Builder.",
+      "second_answer": "Use the Process Automation settings",
+      "third_answer": "Use a trigger.",
+      "fourth_answer": "Use a validation rule."
+    },
+    "true_answer": "3,4"
+  },
+  {
+    "question": "3.\tWhich two statements are true about Getter and Setter methods as they relate to Visualforce? Choose 2 answers \n",
+    "answers": {
+      "first_answer": "Getter methods can pass a value from a controller to a page.",
+      "second_answer": "Setter methods can pass a value from a controller to a page.",
+      "third_answer": "Setter methods always have to be declared global.",
+      "fourth_answer": "Use a vThere is no guarantee for the order in which Getter or Setter methods are executed."
+    },
+    "true_answer": "1,4"
+  },
+  {
+    "question": "3.\tWhat should be used to create scratch orgs? \n",
+    "answers": {
+      "first_answer": "Sandbox refresh",
+      "second_answer": "Workbench",
+      "third_answer": "Developer Console",
+      "fourth_answer": "Salesforce SLI"
+    },
+    "true_answer": "4"
+  },
+  {
+    "question": "3.\tUniversal Containers wants a list button to display a Visualforce page that allows users to edit multiple records. Which Visualforce feature supports this requirement? \n",
+    "answers": {
+      "first_answer": "controller extension",
+      "second_answer": "custom controller",
+      "third_answer": "recordSetVar page attribute",
+      "fourth_answer": "<apex:listButton> tag"
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "3.\tA developer has to identify a method in an Apex class that performs resource intensive actions in memory by iterating over the result set of a SOQL statement on the account. The method also performs a DML statement to save the changes to the database.Which two techniques should the developer implement as a best practice to ensure transaction control and avoid exceeding governor limits? \n",
+    "answers": {
+      "first_answer": "Use Partial DML statements to ensure only valid data is committed.",
+      "second_answer": "Use the System.Limit class to monitor the current CPU governor limit consumption.",
+      "third_answer": "Use the @ReadOnly annotation to bypass the number of rows returned by a SOQL",
+      "fourth_answer": "Use the Database.Savepoint method to enforce database integrity."
+    },
+    "true_answer": "2,4"
+  },
+  {
+    "question": "3.\tA developer wants to import 500 Opportunity records into a sandbox.Why should the developer choose to use Data Loader instead of Data Import Wizard? \n",
+    "answers": {
+      "first_answer": "Data Loader automatically relates Opportunities to Accounts.",
+      "second_answer": "Data Import Wizard does not support Opportunities.",
+      "third_answer": "Data Import Wizard can not import all 500 records.",
+      "fourth_answer": "Data Loader runs from the developer's browser."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "3.\tGiven the following Apex statement:Account myAccount = [SELECT Id, Name FROM Account}; What occurs when more than one Account is returned by the SOQL query? \n",
+    "answers": {
+      "first_answer": "The query fails and an error is written to the debug log.",
+      "second_answer": "An unhandled exception is thrown and the code terminates.",
+      "third_answer": "The variable, myAccount, is automatically cast to the List data type.",
+      "fourth_answer": "The first Account returned is assigned to myAccount."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "3.\tWhile writing an Apex class that creates Accounts, a developer wants to make sure that all required fields are handled properly withoutchanging any data in the org.Which approach should the developer use to be sure that the Apex class works correctly? \n",
+    "answers": {
+      "first_answer": "Run the code in an Execute Anonymous block.",
+      "second_answer": "Perform a code review with another developer.",
+      "third_answer": "Include a try/catch block to the Apex class.",
+      "fourth_answer": "Add the business logic to a test class."
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "3.\tA developer wrote Apex code that calls out to an external system.How should a developer write the test to provide test coverage? \n",
+    "answers": {
+      "first_answer": "Write a class that implements WebserviceMock.",
+      "second_answer": "Write a class that extends WebserviceMock.",
+      "third_answer": "Write a class that implements the HTTPCalloutMock interface.",
+      "fourth_answer": "Write a class that extends HTTPCalloutMock."
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "3.\t A developer has an integer variable called maxAttempts. The developer needs to ensure that once maxAttempts is initialized, it preserves itsvalue for the length of the Apex transaction; while being able to share the variable's state between trigger executions. How should the developer declare maxAttempts to meet these requirements? \n",
+    "answers": {
+      "first_answer": "Declare maxAttempts as a private static variable on a helper class.",
+      "second_answer": "Declare maxAttempts as a constant using the static and final keywords.",
+      "third_answer": "Declare maxAttempts as a member variable on the trigger definition.",
+      "fourth_answer": "Declare maxAttempts as a variable on a helper class."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "3.\tWhat are two characteristics related to formulas? Choose 2 answers \n",
+    "answers": {
+      "first_answer": "Formulas can reference values in related objects.",
+      "second_answer": "Fields that are used in a formula field can be deleted or edited without editing the formula.",
+      "third_answer": "Formulas can reference themselves.",
+      "fourth_answer": "Formulas are calculated at runtime and are not stored in the database."
+    },
+    "true_answer": "1,4"
+  },
+  {
+    "question": "3.\tA developer identifies the following triggers on the Expense__c object: deleteExpense, applyDefaultsToExpense, validateExpenseUpdate; The triggers process before delete, before insert, and before update events respectively. Which two techniques should the developer implement to ensure trigger best practices are followed? \n",
+    "answers": {
+      "first_answer": "Unify all three triggers in a single trigger on the Expense__c object that includes all events.",
+      "second_answer": "Maintain all three triagers on the Expense__c object, but move the Apex logic out of the trigger definition.",
+      "third_answer": "Create helper classes to execute the appropriate logic when a record is saved.",
+      "fourth_answer": "Unify the before insert and before update triggers and use Process Builder for the delete action."
+    },
+    "true_answer": "1,3"
+  },
+  {
+    "question": "3.\tA developer is asked to create a Visualforce page that displays some Account fields as well as fields configured on the page layout for relatedContacts.How should the developer implement this request?\n",
+    "answers": {
+      "first_answer": "Use the <apex:relatedList> tag.",
+      "second_answer": "Create a controller extension.",
+      "third_answer": "Use the <spex:include> tag.",
+      "fourth_answer": "Add a method to the standard controller."
+    },
+    "true_answer": "1"
+  },
+  {
+    "question": "3.\tFlow Builder uses an Apex Action to provide additional information about multiple Contacts, stored in a custom class, ContactInfo. Which is the correct definition of the Apex method that gets the additional information? \n",
+    "answers": {
+      "first_answer": "@InvocableMethod(label='Additional Info') public List<Contactinfo> getInfo(List<Id> contactids) { /*implementation*®/ }",
+      "second_answer": "cableMethed(label='Additional Info') public static List<ContactInfo> getinfo(List<id> contactids ) { /*implementation*/ }",
+      "third_answer": "@invocableMethod(label='Additionai Info')public ContactInfo getinfo{Id contactid) { /*implementation*/ }",
+      "fourth_answer": "Formulas are calculated at runtime and are not stored in the database."
+    },
+    "true_answer": "2"
+  },
+  {
+    "question": "3.\tAn org has an existing Flow that creates an Opportunity with an Update Records element. A developer must update the Flow to also create a Contact and store the created Contact’s ID on the Opportunity. Which update should the developer make in the Flow? \n",
+    "answers": {
+      "first_answer": " Add a new Get Records element.",
+      "second_answer": "Add a new Update Records element",
+      "third_answer": "Add a new Create Records element.",
+      "fourth_answer": "Add a new Quick Action element (of type Create).."
+    },
+    "true_answer": "3"
+  },
+  {
+    "question": "3.\tWhich statement about change set deployments is accurate? Choose 3 answers  \n",
+    "answers": {
+      "first_answer": "Change sets can deploy custom settings data.",
+      "second_answer": "Change sets can only be used between related organizations.",
+      "third_answer": "Change sets can be used to transfer records.",
+      "fourth_answer": "Sending a change set between two orgs requires a deployment connection.",
+      "five_answer": "Deployment is done in a one-way, single transaction."
+    },
+    "true_answer": "1,2,4"
+  }
+
+]
